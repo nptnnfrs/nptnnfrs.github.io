@@ -10,191 +10,122 @@
 <meta property="og:image" content="bye-cover.jpg">
 <title>NPTNNFRS — BYE</title>
 <style>
-:root{
-  --bg:#050505;
-  --fg:#eee9e9;
-  --muted:#8f8889;
-  --pink:#ad7885;
-  --pink2:#c08a96;
-  --line:#272022;
-}
+:root{--bg:#050505;--fg:#eee8e9;--muted:#858082;--pink:#b17b88;--line:#292124}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{
-  margin:0;background:var(--bg);color:var(--fg);
-  font-family:Roboto,"Futura PT",Futura,Arial,sans-serif;
-  font-weight:400;letter-spacing:.02em;line-height:1.5;
-}
-a{color:inherit;text-decoration:none}
-a:hover{color:var(--pink2)}
-.wrap{width:min(1180px,calc(100% - 42px));margin:auto}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:Roboto,"Futura PT",Futura,Arial,sans-serif;font-weight:400;letter-spacing:.02em}
+a{color:inherit;text-decoration:none}a:hover{color:#ca909e}
+.wrap{width:min(1180px,calc(100% - 44px));margin:auto}
 
-/* HEADER — the supplied portrait is kept at its native aspect ratio. */
-header{
-  min-height:92vh;padding:30px 0 70px;
-  display:flex;align-items:center;
-}
-.topline{
-  position:absolute;top:24px;left:0;right:0;
-  display:flex;justify-content:space-between;padding:0 21px;
-  font-size:11px;text-transform:uppercase;color:var(--pink2);
-  letter-spacing:.18em;
-}
-.hero{
-  display:grid;grid-template-columns:.82fr 1.18fr;
-  gap:clamp(32px,7vw,105px);align-items:center;width:100%;
-}
-.hero-image{
-  order:2;display:flex;justify-content:center;align-items:center;
-  overflow:hidden;background:#050505;
-}
-.hero-image img{
-  width:auto;height:auto;max-width:100%;max-height:78vh;
-  display:block;object-fit:contain;
-}
+header{min-height:92vh;padding:34px 0 70px;display:flex;align-items:center}
+.topline{position:absolute;top:25px;left:0;right:0;display:flex;justify-content:space-between;padding:0 22px;color:#c08a96;font-size:10px;letter-spacing:.2em;text-transform:uppercase}
+.hero{width:100%;display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(35px,7vw,110px);align-items:center}
 .hero-copy{order:1}
-.artist{
-  font-size:clamp(42px,7vw,92px);line-height:.9;
-  letter-spacing:-.045em;font-weight:400;margin:0 0 25px;
+.hero-image{order:2;display:flex;justify-content:flex-end;align-items:center;overflow:hidden}
+.hero-image img{
+  display:block;width:auto;height:auto;max-width:100%;
+  max-height:78vh;object-fit:contain;
+  /* only the presentation window trims a little top/bottom; the file itself is untouched */
+  transform:scale(1.035);
 }
-.release{
-  color:var(--pink2);font-size:13px;letter-spacing:.2em;
-  text-transform:uppercase;margin-bottom:10px;
-}
-.title{
-  font-size:clamp(58px,10vw,132px);line-height:.82;
-  letter-spacing:-.055em;font-weight:400;margin:0 0 34px;
-}
-.meta{color:var(--muted);font-size:13px}
+.release{font-size:12px;letter-spacing:.22em;color:#c08a96;text-transform:uppercase;margin-bottom:13px}
+.artist{font-size:clamp(43px,7vw,94px);font-weight:400;line-height:.88;letter-spacing:-.05em;margin:0 0 25px}
+.title{font-size:clamp(62px,10vw,134px);font-weight:400;line-height:.8;letter-spacing:-.06em;margin:0 0 34px}
+.meta{font-size:12px;color:var(--muted);letter-spacing:.04em}
 
-.section{border-top:1px solid var(--line);padding:80px 0}
+.section{border-top:1px solid var(--line);padding:72px 0}
 .grid{display:grid;grid-template-columns:170px 1fr;gap:50px}
-.label{
-  color:var(--pink2);font-size:11px;text-transform:uppercase;
-  letter-spacing:.18em;
-}
+.label{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#c08a96}
 
-/* One square EP cover per track — no strip/carousel. */
 .tracks{border-top:1px solid var(--line)}
 .track{
-  display:grid;grid-template-columns:86px 55px 1fr;
-  gap:20px;align-items:center;min-height:104px;
-  border-bottom:1px solid var(--line);font-size:15px;
+  display:grid;grid-template-columns:104px 55px 1fr auto;
+  gap:20px;align-items:center;min-height:122px;
+  border-bottom:1px solid var(--line)
 }
 .track-cover{
-  width:86px;height:86px;object-fit:cover;display:block;
+  width:104px;height:auto;aspect-ratio:auto;
+  display:block;object-fit:contain;
 }
-.track-no{color:var(--pink2);font-size:12px}
+.track-no{color:#c08a96;font-size:12px}
+.track-name{font-size:15px}
+.track-time{color:#777;font-size:10px}
 
-.about{
-  max-width:700px;font-size:clamp(20px,2.6vw,31px);
-  line-height:1.25;letter-spacing:-.015em;
-}
-.links{
-  display:grid;grid-template-columns:repeat(4,1fr);
-  border-top:1px solid var(--line);
-}
-.link{
-  padding:24px 0;border-bottom:1px solid var(--line);
-  font-size:12px;letter-spacing:.14em;
-}
-footer{
-  padding:45px 0 35px;display:flex;justify-content:space-between;
-  color:#686263;font-size:10px;text-transform:uppercase;
-  letter-spacing:.13em;
-}
+.about{max-width:710px;font-size:clamp(19px,2.5vw,30px);line-height:1.27;letter-spacing:-.015em}
+.links{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line)}
+.link{padding:23px 0;border-bottom:1px solid var(--line);font-size:11px;letter-spacing:.16em}
+
+footer{padding:44px 0 34px;display:flex;justify-content:space-between;color:#656062;font-size:9px;text-transform:uppercase;letter-spacing:.14em}
 
 @media(max-width:760px){
-  header{min-height:auto;padding:90px 0 65px}
-  .topline{position:static;padding:0;margin-bottom:55px}
-  .hero{grid-template-columns:1fr;gap:42px}
-  .hero-image{order:1}
-  .hero-image img{max-height:none;width:auto;max-width:100%}
-  .hero-copy{order:2}
-  .grid{grid-template-columns:1fr;gap:28px}
-  .track{
-    grid-template-columns:58px 42px 1fr;
-    gap:12px;min-height:82px;
-  }
-  .track-cover{width:58px;height:58px}
-  .links{grid-template-columns:1fr 1fr}
-  footer{display:block}
-  footer span{display:block;margin-bottom:10px}
+ header{min-height:auto;padding:88px 0 58px}
+ .topline{position:static;padding:0;margin-bottom:48px}
+ .hero{grid-template-columns:1fr;gap:38px}
+ .hero-image{order:1;justify-content:center}
+ .hero-image img{max-height:none;width:auto;max-width:100%;transform:scale(1)}
+ .hero-copy{order:2}
+ .grid{grid-template-columns:1fr;gap:25px}
+ .track{grid-template-columns:64px 38px 1fr;gap:12px;min-height:86px}
+ .track-cover{width:64px}
+ .track-time{display:none}
+ .links{grid-template-columns:1fr 1fr}
+ footer{display:block}
+ footer span{display:block;margin-bottom:10px}
 }
 </style>
 </head>
-
 <body>
 <header class="wrap">
-  <div class="topline">
-    <span>NPTNNFRS</span>
-    <span>Argentina / 2026</span>
-  </div>
-
+  <div class="topline"><span>NPTNNFRS</span><span>Argentina / 2026</span></div>
   <div class="hero">
-    <div class="hero-image">
-      <img src="nptnnfrs-main.jpg" alt="NPTNNFRS artwork">
-    </div>
-
     <div class="hero-copy">
       <div class="release">EP / 2026</div>
       <h1 class="artist">NPTNNFRS</h1>
       <h2 class="title">BYE</h2>
       <div class="meta">electronic music / producer / artist</div>
     </div>
+    <div class="hero-image">
+      <img src="nptnnfrs-portrait.jpg" alt="NPTNNFRS artwork">
+    </div>
   </div>
 </header>
 
 <main class="wrap">
-  <section class="section">
-    <div class="grid">
-      <div class="label">Tracklist</div>
-      <div class="tracks">
-        <div class="track">
-          <img class="track-cover" src="bye-cover.jpg" alt="BYE EP cover">
-          <span class="track-no">01</span><span>01</span>
-        </div>
-        <div class="track">
-          <img class="track-cover" src="bye-cover.jpg" alt="BYE EP cover">
-          <span class="track-no">02</span><span>02</span>
-        </div>
-        <div class="track">
-          <img class="track-cover" src="bye-cover.jpg" alt="BYE EP cover">
-          <span class="track-no">03</span><span>03</span>
-        </div>
-        <div class="track">
-          <img class="track-cover" src="bye-cover.jpg" alt="BYE EP cover">
-          <span class="track-no">00</span><span>00 (bye)</span>
-        </div>
-      </div>
+<section class="section">
+  <div class="grid">
+    <div class="label">Tracklist</div>
+    <div class="tracks">
+      <div class="track"><img class="track-cover" src="bye-cover.jpg" alt="BYE EP cover"><span class="track-no">01</span><span class="track-name">01</span><span class="track-time"></span></div>
+      <div class="track"><img class="track-cover" src="bye-cover.jpg" alt="BYE EP cover"><span class="track-no">02</span><span class="track-name">02</span><span class="track-time"></span></div>
+      <div class="track"><img class="track-cover" src="bye-cover.jpg" alt="BYE EP cover"><span class="track-no">03</span><span class="track-name">03</span><span class="track-time"></span></div>
+      <div class="track"><img class="track-cover" src="bye-cover.jpg" alt="BYE EP cover"><span class="track-no">00</span><span class="track-name">00 (bye)</span><span class="track-time"></span></div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="section">
-    <div class="grid">
-      <div class="label">About</div>
-      <div class="about">
-        NPTNNFRS is an independent electronic music project from Argentina exploring dark experimental techno, electronic pop, manipulated vocals, atmospheric textures and broken club rhythms.
-      </div>
-    </div>
-  </section>
+<section class="section">
+  <div class="grid">
+    <div class="label">About</div>
+    <div class="about">NPTNNFRS is an independent electronic music project from Argentina exploring dark experimental techno, electronic pop, manipulated vocals, atmospheric textures and broken club rhythms.</div>
+  </div>
+</section>
 
-  <section class="section">
-    <div class="grid">
-      <div class="label">Listen</div>
-      <div class="links">
-        <a class="link" href="#">SOUNDCLOUD ↗</a>
-        <a class="link" href="#">YOUTUBE ↗</a>
-        <a class="link" href="#">SPOTIFY ↗</a>
-        <a class="link" href="#">INSTAGRAM ↗</a>
-      </div>
+<section class="section">
+  <div class="grid">
+    <div class="label">Listen</div>
+    <div class="links">
+      <a class="link" href="https://soundcloud.com/nptnnfrs" target="_blank" rel="noopener noreferrer">SOUNDCLOUD ↗</a>
+      <a class="link" href="https://www.youtube.com/@nptnnfrss" target="_blank" rel="noopener noreferrer">YOUTUBE ↗</a>
+      <a class="link" href="#">SPOTIFY ↗</a>
+      <a class="link" href="https://www.instagram.com/nptnnfrs/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a>
     </div>
-  </section>
+  </div>
+</section>
 </main>
 
 <footer class="wrap">
-  <span>© 2026 NPTNNFRS</span>
-  <span>Produced / written / performed by NPTNNFRS</span>
+<span>© 2026 NPTNNFRS</span>
+<span>Produced / written / performed by NPTNNFRS</span>
 </footer>
 </body>
 </html>
