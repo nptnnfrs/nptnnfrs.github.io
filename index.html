@@ -1,21 +1,41 @@
 <!doctype html>
 <html lang="en">
+
 <head>
+
 <meta charset="utf-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <meta name="description" content="NPTNNFRS — BYE. Independent electronic music producer and artist from Argentina.">
+
 <meta name="author" content="NPTNNFRS">
 
+<!-- FAVICON -->
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+<!-- SOCIAL PREVIEW -->
+
 <meta property="og:title" content="NPTNNFRS — BYE">
+
 <meta property="og:description" content="BYE — EP 2026 by NPTNNFRS.">
+
 <meta property="og:type" content="website">
+
 <meta property="og:url" content="https://nptnnfrs.github.io/">
+
 <meta property="og:image" content="https://nptnnfrs.github.io/bye-cover.jpg">
+
+<meta property="og:image:alt" content="NPTNNFRS — BYE">
 
 <title>NPTNNFRS — BYE</title>
 
+
 <style>
+
+/* =========================
+   BASE
+========================= */
 
 :root{
   --bg:#050505;
@@ -56,7 +76,10 @@ a:hover{
   margin:auto;
 }
 
-/* HEADER */
+
+/* =========================
+   HEADER
+========================= */
 
 header{
   min-height:92vh;
@@ -70,20 +93,30 @@ header{
   top:25px;
   left:0;
   right:0;
+
   display:flex;
   justify-content:space-between;
+
   padding:0 22px;
+
   color:#c08a96;
+
   font-size:10px;
+
   letter-spacing:.2em;
+
   text-transform:uppercase;
 }
 
 .hero{
   width:100%;
+
   display:grid;
+
   grid-template-columns:.8fr 1.2fr;
+
   gap:clamp(35px,7vw,110px);
+
   align-items:center;
 }
 
@@ -93,73 +126,109 @@ header{
 
 .hero-image{
   order:2;
+
   display:flex;
+
   justify-content:flex-end;
+
   align-items:center;
+
   overflow:hidden;
 }
 
 .hero-image img{
   display:block;
+
   width:auto;
+
   height:auto;
+
   max-width:100%;
+
   max-height:78vh;
+
   object-fit:contain;
+
   transform:scale(1.035);
 }
 
 .release{
   font-size:12px;
+
   letter-spacing:.22em;
+
   color:#c08a96;
+
   text-transform:uppercase;
+
   margin-bottom:13px;
 }
 
 .artist{
   font-size:clamp(43px,7vw,94px);
+
   font-weight:400;
+
   line-height:.88;
+
   letter-spacing:-.05em;
+
   margin:0 0 25px;
 }
 
 .title{
   font-size:clamp(62px,10vw,134px);
+
   font-weight:400;
+
   line-height:.8;
+
   letter-spacing:-.06em;
+
   margin:0 0 34px;
 }
 
 .meta{
   font-size:12px;
+
   color:var(--muted);
+
   letter-spacing:.04em;
 }
 
-/* SECTIONS */
+
+/* =========================
+   SECTIONS
+========================= */
 
 .section{
   border-top:1px solid var(--line);
+
   padding:72px 0;
 }
 
 .grid{
   display:grid;
+
   grid-template-columns:170px 1fr;
+
   gap:50px;
 }
 
 .label{
   font-size:10px;
+
   letter-spacing:.2em;
+
   text-transform:uppercase;
+
   color:#c08a96;
 }
 
-/* TRACKLIST */
+
+/* =========================
+   TRACKLIST
+========================= */
 
 .tracks{
   border-top:1px solid var(--line);
@@ -167,19 +236,29 @@ header{
 
 .track{
   display:grid;
+
   grid-template-columns:104px 55px 1fr auto;
+
   gap:20px;
+
   align-items:center;
+
   min-height:122px;
+
   border-bottom:1px solid var(--line);
 }
 
 .track-cover{
   width:104px;
+
   height:auto;
+
   aspect-ratio:auto;
+
   display:block;
+
   object-fit:contain;
+
   transition:opacity .25s ease;
 }
 
@@ -189,11 +268,13 @@ header{
 
 .track-no{
   color:#c08a96;
+
   font-size:12px;
 }
 
 .track-name{
   font-size:15px;
+
   transition:color .25s ease;
 }
 
@@ -203,30 +284,45 @@ header{
 
 .track-time{
   color:#777;
+
   font-size:10px;
 }
 
-/* ABOUT */
+
+/* =========================
+   ABOUT
+========================= */
 
 .about{
   max-width:710px;
+
   font-size:clamp(19px,2.5vw,30px);
+
   line-height:1.27;
+
   letter-spacing:-.015em;
 }
 
-/* LINKS */
+
+/* =========================
+   SOCIAL LINKS
+========================= */
 
 .links{
   display:grid;
+
   grid-template-columns:repeat(4,1fr);
+
   border-top:1px solid var(--line);
 }
 
 .link{
   padding:23px 0;
+
   border-bottom:1px solid var(--line);
+
   font-size:11px;
+
   letter-spacing:.16em;
 }
 
@@ -236,6 +332,7 @@ header{
 
 .link.disabled{
   color:#555;
+
   cursor:default;
 }
 
@@ -243,47 +340,67 @@ header{
   color:#555;
 }
 
-/* FOOTER */
+
+/* =========================
+   FOOTER
+========================= */
 
 footer{
   padding:44px 0 34px;
+
   display:flex;
+
   justify-content:space-between;
+
   color:#656062;
+
   font-size:9px;
+
   text-transform:uppercase;
+
   letter-spacing:.14em;
 }
 
-/* MOBILE */
+
+/* =========================
+   MOBILE
+========================= */
 
 @media(max-width:760px){
 
   header{
     min-height:auto;
+
     padding:88px 0 58px;
   }
 
   .topline{
     position:static;
+
     padding:0;
+
     margin-bottom:48px;
   }
 
   .hero{
     grid-template-columns:1fr;
+
     gap:38px;
   }
 
   .hero-image{
     order:1;
+
     justify-content:center;
   }
 
   .hero-image img{
     max-height:none;
+
     width:auto;
+
     max-width:100%;
+
     transform:scale(1);
   }
 
@@ -293,12 +410,15 @@ footer{
 
   .grid{
     grid-template-columns:1fr;
+
     gap:25px;
   }
 
   .track{
     grid-template-columns:64px 38px 1fr;
+
     gap:12px;
+
     min-height:86px;
   }
 
@@ -320,26 +440,37 @@ footer{
 
   footer span{
     display:block;
+
     margin-bottom:10px;
   }
 
 }
 
 </style>
+
 </head>
+
 
 <body>
 
-<!-- HEADER -->
+
+<!-- =========================
+     HEADER
+========================= -->
 
 <header class="wrap">
 
   <div class="topline">
+
     <span>NPTNNFRS</span>
+
     <span>Argentina / 2026</span>
+
   </div>
 
+
   <div class="hero">
+
 
     <div class="hero-copy">
 
@@ -347,19 +478,23 @@ footer{
         EP / 2026
       </div>
 
+
       <h1 class="artist">
         NPTNNFRS
       </h1>
 
+
       <h2 class="title">
         BYE
       </h2>
+
 
       <div class="meta">
         electronic music / producer / artist
       </div>
 
     </div>
+
 
     <div class="hero-image">
 
@@ -370,46 +505,58 @@ footer{
 
     </div>
 
+
   </div>
 
 </header>
 
 
+
 <main class="wrap">
 
 
-<!-- TRACKLIST -->
+<!-- =========================
+     TRACKLIST
+========================= -->
 
 <section class="section">
 
+
   <div class="grid">
+
 
     <div class="label">
       Tracklist
     </div>
 
+
     <div class="tracks">
 
 
-      <!-- 01 -->
+      <!-- TRACK 01 -->
 
       <div class="track">
+
 
         <a
           href="https://soundcloud.com/nptnnfrs/01a1"
           target="_blank"
           rel="noopener noreferrer"
         >
+
           <img
             class="track-cover"
             src="bye-cover.jpg"
             alt="BYE EP cover"
           >
+
         </a>
+
 
         <span class="track-no">
           01
         </span>
+
 
         <a
           class="track-name"
@@ -420,30 +567,38 @@ footer{
           01 ↗
         </a>
 
+
         <span class="track-time"></span>
+
 
       </div>
 
 
-      <!-- 02 -->
+
+      <!-- TRACK 02 -->
 
       <div class="track">
+
 
         <a
           href="https://soundcloud.com/nptnnfrs/02nptnnfrs"
           target="_blank"
           rel="noopener noreferrer"
         >
+
           <img
             class="track-cover"
             src="bye-cover.jpg"
             alt="BYE EP cover"
           >
+
         </a>
+
 
         <span class="track-no">
           02
         </span>
+
 
         <a
           class="track-name"
@@ -454,30 +609,38 @@ footer{
           02 ↗
         </a>
 
+
         <span class="track-time"></span>
+
 
       </div>
 
 
-      <!-- 03 -->
+
+      <!-- TRACK 03 -->
 
       <div class="track">
+
 
         <a
           href="https://soundcloud.com/nptnnfrs/nova"
           target="_blank"
           rel="noopener noreferrer"
         >
+
           <img
             class="track-cover"
             src="bye-cover.jpg"
             alt="BYE EP cover"
           >
+
         </a>
+
 
         <span class="track-no">
           03
         </span>
+
 
         <a
           class="track-name"
@@ -488,30 +651,38 @@ footer{
           03 ↗
         </a>
 
+
         <span class="track-time"></span>
+
 
       </div>
 
 
-      <!-- 00 (BYE) -->
+
+      <!-- TRACK 00 -->
 
       <div class="track">
+
 
         <a
           href="https://soundcloud.com/nptnnfrs/00bye"
           target="_blank"
           rel="noopener noreferrer"
         >
+
           <img
             class="track-cover"
             src="bye-cover.jpg"
             alt="BYE EP cover"
           >
+
         </a>
+
 
         <span class="track-no">
           00
         </span>
+
 
         <a
           class="track-name"
@@ -522,7 +693,9 @@ footer{
           00 (bye) ↗
         </a>
 
+
         <span class="track-time"></span>
+
 
       </div>
 
@@ -534,36 +707,52 @@ footer{
 </section>
 
 
-<!-- ABOUT -->
+
+<!-- =========================
+     ABOUT
+========================= -->
 
 <section class="section">
 
+
   <div class="grid">
+
 
     <div class="label">
       About
     </div>
 
+
     <div class="about">
+
       NPTNNFRS is an independent electronic music project from Argentina exploring dark experimental techno, electronic pop, manipulated vocals, atmospheric textures and broken club rhythms.
+
     </div>
+
 
   </div>
 
 </section>
 
 
-<!-- LISTEN -->
+
+<!-- =========================
+     LISTEN
+========================= -->
 
 <section class="section">
 
+
   <div class="grid">
+
 
     <div class="label">
       Listen
     </div>
 
+
     <div class="links">
+
 
       <a
         class="link"
@@ -574,6 +763,7 @@ footer{
         SOUNDCLOUD ↗
       </a>
 
+
       <a
         class="link"
         href="https://www.youtube.com/@nptnnfrss"
@@ -583,9 +773,11 @@ footer{
         YOUTUBE ↗
       </a>
 
+
       <span class="link disabled">
         SPOTIFY / SOON
       </span>
+
 
       <a
         class="link"
@@ -596,7 +788,9 @@ footer{
         INSTAGRAM ↗
       </a>
 
+
     </div>
+
 
   </div>
 
@@ -606,20 +800,27 @@ footer{
 </main>
 
 
-<!-- FOOTER -->
+
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer class="wrap">
+
 
   <span>
     © 2026 NPTNNFRS
   </span>
 
+
   <span>
     Produced / written / performed by NPTNNFRS
   </span>
+
 
 </footer>
 
 
 </body>
+
 </html>
