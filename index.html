@@ -23,9 +23,15 @@
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 
 
-<!-- =========================
-     OPEN GRAPH
-========================= -->
+<!-- GOOGLE SEARCH CONSOLE -->
+
+<meta
+  name="google-site-verification"
+  content="Z9f31_1MJIWvRLWUlY4CwXYN2rr6yoZfmUoxRrGMLs4"
+/>
+
+
+<!-- OPEN GRAPH -->
 
 <meta property="og:title" content="NPTNNFRS — BYE">
 
@@ -52,11 +58,12 @@
 >
 
 
-<!-- =========================
-     TWITTER / X
-========================= -->
+<!-- TWITTER / X -->
 
-<meta name="twitter:card" content="summary_large_image">
+<meta
+  name="twitter:card"
+  content="summary_large_image"
+>
 
 <meta
   name="twitter:title"
@@ -74,12 +81,9 @@
 >
 
 
-<!-- =========================
-     STRUCTURED DATA
-========================= -->
+<!-- STRUCTURED DATA -->
 
 <script type="application/ld+json">
-
 {
   "@context": "https://schema.org",
 
@@ -108,8 +112,6 @@
     "@type": "MusicAlbum",
 
     "name": "BYE",
-
-    "albumProductionType": "StudioAlbum",
 
     "albumReleaseType": "EPRelease",
 
@@ -147,7 +149,6 @@
     ]
   }
 }
-
 </script>
 
 
@@ -207,30 +208,20 @@ header{
   top:25px;
   left:0;
   right:0;
-
   display:flex;
   justify-content:space-between;
-
   padding:0 22px;
-
   color:#c08a96;
-
   font-size:10px;
-
   letter-spacing:.2em;
-
   text-transform:uppercase;
 }
 
 .hero{
   width:100%;
-
   display:grid;
-
   grid-template-columns:.8fr 1.2fr;
-
   gap:clamp(35px,7vw,110px);
-
   align-items:center;
 }
 
@@ -240,73 +231,49 @@ header{
 
 .hero-image{
   order:2;
-
   display:flex;
-
   justify-content:flex-end;
-
   align-items:center;
-
   overflow:hidden;
 }
 
 .hero-image img{
   display:block;
-
   width:auto;
-
   height:auto;
-
   max-width:100%;
-
   max-height:78vh;
-
   object-fit:contain;
-
   transform:scale(1.035);
 }
 
 .release{
   font-size:12px;
-
   letter-spacing:.22em;
-
   color:#c08a96;
-
   text-transform:uppercase;
-
   margin-bottom:13px;
 }
 
 .artist{
   font-size:clamp(43px,7vw,94px);
-
   font-weight:400;
-
   line-height:.88;
-
   letter-spacing:-.05em;
-
   margin:0 0 25px;
 }
 
 .title{
   font-size:clamp(62px,10vw,134px);
-
   font-weight:400;
-
   line-height:.8;
-
   letter-spacing:-.06em;
-
   margin:0 0 34px;
 }
 
 .meta{
   font-size:12px;
-
   color:var(--muted);
-
   letter-spacing:.04em;
 }
 
@@ -315,25 +282,19 @@ header{
 
 .section{
   border-top:1px solid var(--line);
-
   padding:72px 0;
 }
 
 .grid{
   display:grid;
-
   grid-template-columns:170px 1fr;
-
   gap:50px;
 }
 
 .label{
   font-size:10px;
-
   letter-spacing:.2em;
-
   text-transform:uppercase;
-
   color:#c08a96;
 }
 
@@ -346,29 +307,19 @@ header{
 
 .track{
   display:grid;
-
   grid-template-columns:104px 55px 1fr auto;
-
   gap:20px;
-
   align-items:center;
-
   min-height:122px;
-
   border-bottom:1px solid var(--line);
 }
 
 .track-cover{
   width:104px;
-
   height:auto;
-
   aspect-ratio:auto;
-
   display:block;
-
   object-fit:contain;
-
   transition:opacity .25s ease;
 }
 
@@ -378,13 +329,11 @@ header{
 
 .track-no{
   color:#c08a96;
-
   font-size:12px;
 }
 
 .track-name{
   font-size:15px;
-
   transition:color .25s ease;
 }
 
@@ -394,7 +343,6 @@ header{
 
 .track-time{
   color:#777;
-
   font-size:10px;
 }
 
@@ -403,11 +351,8 @@ header{
 
 .about{
   max-width:710px;
-
   font-size:clamp(19px,2.5vw,30px);
-
   line-height:1.27;
-
   letter-spacing:-.015em;
 }
 
@@ -416,19 +361,14 @@ header{
 
 .links{
   display:grid;
-
   grid-template-columns:repeat(4,1fr);
-
   border-top:1px solid var(--line);
 }
 
 .link{
   padding:23px 0;
-
   border-bottom:1px solid var(--line);
-
   font-size:11px;
-
   letter-spacing:.16em;
 }
 
@@ -438,7 +378,6 @@ header{
 
 .link.disabled{
   color:#555;
-
   cursor:default;
 }
 
@@ -451,17 +390,11 @@ header{
 
 footer{
   padding:44px 0 34px;
-
   display:flex;
-
   justify-content:space-between;
-
   color:#656062;
-
   font-size:9px;
-
   text-transform:uppercase;
-
   letter-spacing:.14em;
 }
 
@@ -472,37 +405,29 @@ footer{
 
   header{
     min-height:auto;
-
     padding:88px 0 58px;
   }
 
   .topline{
     position:static;
-
     padding:0;
-
     margin-bottom:48px;
   }
 
   .hero{
     grid-template-columns:1fr;
-
     gap:38px;
   }
 
   .hero-image{
     order:1;
-
     justify-content:center;
   }
 
   .hero-image img{
     max-height:none;
-
     width:auto;
-
     max-width:100%;
-
     transform:scale(1);
   }
 
@@ -512,15 +437,12 @@ footer{
 
   .grid{
     grid-template-columns:1fr;
-
     gap:25px;
   }
 
   .track{
     grid-template-columns:64px 38px 1fr;
-
     gap:12px;
-
     min-height:86px;
   }
 
@@ -542,7 +464,6 @@ footer{
 
   footer span{
     display:block;
-
     margin-bottom:10px;
   }
 
@@ -556,9 +477,7 @@ footer{
 <body>
 
 
-<!-- =========================
-     HEADER
-========================= -->
+<!-- HEADER -->
 
 <header class="wrap">
 
@@ -617,12 +536,9 @@ footer{
 <main class="wrap">
 
 
-<!-- =========================
-     TRACKLIST
-========================= -->
+<!-- TRACKLIST -->
 
 <section class="section">
-
 
   <div class="grid">
 
@@ -755,7 +671,7 @@ footer{
 
 
 
-      <!-- 00 -->
+      <!-- 00 (BYE) -->
 
       <div class="track">
 
@@ -802,12 +718,9 @@ footer{
 
 
 
-<!-- =========================
-     ABOUT
-========================= -->
+<!-- ABOUT -->
 
 <section class="section">
-
 
   <div class="grid">
 
@@ -830,12 +743,9 @@ footer{
 
 
 
-<!-- =========================
-     LISTEN
-========================= -->
+<!-- LISTEN -->
 
 <section class="section">
-
 
   <div class="grid">
 
@@ -894,9 +804,7 @@ footer{
 
 
 
-<!-- =========================
-     FOOTER
-========================= -->
+<!-- FOOTER -->
 
 <footer class="wrap">
 
