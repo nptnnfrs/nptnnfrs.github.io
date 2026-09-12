@@ -8,11 +8,15 @@
     content="width=device-width, initial-scale=1.0"
   >
 
-  <title>NPTNNFRS — BYE</title>
+  <!-- =========================
+       SEO
+       ========================= -->
+
+  <title>NPTNNFRS — BYE | Electronic Music from Argentina</title>
 
   <meta
     name="description"
-    content="NPTNNFRS — BYE. An independent electronic music project from Argentina exploring dark experimental techno, electronic pop, manipulated vocals, atmospheric textures and broken club rhythms."
+    content="NPTNNFRS is an independent electronic music project from Argentina exploring dark experimental techno, electronic pop, manipulated vocals, atmospheric textures and broken club rhythms."
   >
 
   <meta
@@ -20,26 +24,50 @@
     content="NPTNNFRS"
   >
 
+  <meta
+    name="robots"
+    content="index, follow"
+  >
+
+  <meta
+    name="googlebot"
+    content="index, follow"
+  >
+
+  <meta
+    name="keywords"
+    content="NPTNNFRS, NPTNNFRS BYE, electronic music, experimental electronic, experimental techno, dark techno, electronic pop, dream pop, manipulated vocals, Argentina"
+  >
+
+  <meta
+    name="theme-color"
+    content="#050505"
+  >
+
   <link
     rel="canonical"
     href="https://nptnnfrs.github.io/"
   >
+
+  <!-- GOOGLE SEARCH CONSOLE -->
 
   <meta
     name="google-site-verification"
     content="Z9f31_1MJIWvRLWUlY4CwXYN2rr6yoZfmUoxRrGMLs4"
   >
 
-  <!-- OPEN GRAPH -->
+  <!-- =========================
+       OPEN GRAPH
+       ========================= -->
 
   <meta
     property="og:title"
-    content="NPTNNFRS — BYE"
+    content="NPTNNFRS — BYE | Electronic Music from Argentina"
   >
 
   <meta
     property="og:description"
-    content="ghosts crying on your shoulder"
+    content="NPTNNFRS — BYE. An independent electronic music project from Argentina exploring dark experimental techno, electronic pop, manipulated vocals, atmospheric textures and broken club rhythms."
   >
 
   <meta
@@ -53,6 +81,16 @@
   >
 
   <meta
+    property="og:site_name"
+    content="NPTNNFRS"
+  >
+
+  <meta
+    property="og:locale"
+    content="en_US"
+  >
+
+  <meta
     property="og:image"
     content="https://nptnnfrs.github.io/cover.jpg"
   >
@@ -62,7 +100,9 @@
     content="NPTNNFRS — BYE"
   >
 
-  <!-- TWITTER -->
+  <!-- =========================
+       TWITTER / X
+       ========================= -->
 
   <meta
     name="twitter:card"
@@ -71,12 +111,12 @@
 
   <meta
     name="twitter:title"
-    content="NPTNNFRS — BYE"
+    content="NPTNNFRS — BYE | Electronic Music from Argentina"
   >
 
   <meta
     name="twitter:description"
-    content="ghosts crying on your shoulder"
+    content="NPTNNFRS — BYE. Dark experimental electronic music from Argentina."
   >
 
   <meta
@@ -84,7 +124,9 @@
     content="https://nptnnfrs.github.io/cover.jpg"
   >
 
-  <!-- FAVICON -->
+  <!-- =========================
+       FAVICON
+       ========================= -->
 
   <link
     rel="icon"
@@ -92,7 +134,9 @@
     href="favicon.ico"
   >
 
-  <!-- FONT -->
+  <!-- =========================
+       FONT
+       ========================= -->
 
   <link
     rel="preconnect"
@@ -102,7 +146,11 @@
   <link
     rel="preconnect"
     href="https://fonts.gstatic.com"
-    crossorigin
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
   >
 
   <link
@@ -110,36 +158,65 @@
     rel="stylesheet"
   >
 
-  <!-- STRUCTURED DATA -->
+  <!-- =========================
+       STRUCTURED DATA
+       ========================= -->
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "MusicGroup",
-    "name": "NPTNNFRS",
-    "url": "https://nptnnfrs.github.io/",
-    "genre": [
-      "Electronic",
-      "Experimental",
-      "Techno",
-      "Electronic Pop"
-    ],
-    "sameAs": [
-      "https://soundcloud.com/nptnnfrs",
-      "https://www.youtube.com/@nptnnfrss",
-      "https://www.instagram.com/nptnnfrs/"
-    ],
-    "album": {
-      "@type": "MusicAlbum",
-      "name": "BYE",
-      "albumReleaseType": "EPRelease",
-      "datePublished": "2026",
-      "url": "https://soundcloud.com/nptnnfrs/sets/bye",
-      "image": "https://nptnnfrs.github.io/cover.jpg"
-    }
+    "@graph": [
+
+      {
+        "@type": "WebSite",
+        "@id": "https://nptnnfrs.github.io/#website",
+        "name": "NPTNNFRS",
+        "url": "https://nptnnfrs.github.io/",
+        "description": "Official website of NPTNNFRS, an independent electronic music project from Argentina."
+      },
+
+      {
+        "@type": "MusicGroup",
+        "@id": "https://nptnnfrs.github.io/#artist",
+        "name": "NPTNNFRS",
+        "url": "https://nptnnfrs.github.io/",
+        "description": "Independent electronic music project from Argentina exploring dark experimental techno, electronic pop, manipulated vocals, atmospheric textures and broken club rhythms.",
+        "genre": [
+          "Electronic",
+          "Experimental Electronic",
+          "Experimental Techno",
+          "Dark Techno",
+          "Electronic Pop",
+          "Dream Pop"
+        ],
+        "sameAs": [
+          "https://nptnnfrs.bandcamp.com/",
+          "https://soundcloud.com/nptnnfrs",
+          "https://www.youtube.com/@nptnnfrss",
+          "https://www.instagram.com/nptnnfrs/"
+        ]
+      },
+
+      {
+        "@type": "MusicAlbum",
+        "@id": "https://nptnnfrs.github.io/#bye",
+        "name": "BYE",
+        "alternateName": "nptnnfrs-bye (micro ep)",
+        "albumReleaseType": "EPRelease",
+        "datePublished": "2026",
+        "description": "BYE is a micro EP by NPTNNFRS about absence, distortion and emotional residue.",
+        "url": "https://nptnnfrs.bandcamp.com/album/bye",
+        "image": "https://nptnnfrs.github.io/cover.jpg",
+        "byArtist": {
+          "@type": "MusicGroup",
+          "name": "NPTNNFRS",
+          "url": "https://nptnnfrs.github.io/"
+        }
+      }
+
+    ]
   }
   </script>
-
 
   <style>
 
@@ -410,6 +487,7 @@
       /*
         Rosa hueso suave en lugar de blanco.
       */
+
       color: #e7d9da;
     }
 
@@ -692,7 +770,7 @@
 
         <a
           class="ep-link"
-          href="https://soundcloud.com/nptnnfrs/sets/bye"
+          href="https://nptnnfrs.bandcamp.com/album/bye"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -750,6 +828,16 @@
 
 
         <div class="listen-list">
+
+          <a
+            class="listen-link"
+            href="https://nptnnfrs.bandcamp.com/album/bye"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            BYE / Bandcamp
+          </a>
+
 
           <a
             class="listen-link"
