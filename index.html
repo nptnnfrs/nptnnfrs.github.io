@@ -9,7 +9,7 @@
 
   <meta
     name="description"
-    content="NPTNNFRS — BYE (micro EP). Independent electronic music project from Argentina exploring dark experimental techno, electronic pop, manipulated vocals, atmospheric textures and broken club rhythms."
+    content="NPTNNFRS — BYE. Independent electronic music project from Argentina exploring dark experimental techno, electronic pop, manipulated vocals, atmospheric textures and broken club rhythms."
   >
 
   <meta name="author" content="NPTNNFRS">
@@ -58,7 +58,7 @@
 
   <meta
     property="og:image"
-    content="https://nptnnfrs.github.io/bye-cover.jpg"
+    content="https://nptnnfrs.github.io/cover.jpg"
   >
 
   <meta
@@ -85,7 +85,7 @@
 
   <meta
     name="twitter:image"
-    content="https://nptnnfrs.github.io/bye-cover.jpg"
+    content="https://nptnnfrs.github.io/cover.jpg"
   >
 
   <!-- Structured Data -->
@@ -124,39 +124,11 @@
 
       "url": "https://soundcloud.com/nptnnfrs/sets/bye",
 
-      "image": "https://nptnnfrs.github.io/bye-cover.jpg",
+      "image": "https://nptnnfrs.github.io/cover.jpg",
 
       "byArtist": {
         "@id": "https://nptnnfrs.github.io/#artist"
-      },
-
-      "track": [
-
-        {
-          "@type": "MusicRecording",
-          "name": "01",
-          "url": "https://soundcloud.com/nptnnfrs/01a1"
-        },
-
-        {
-          "@type": "MusicRecording",
-          "name": "02",
-          "url": "https://soundcloud.com/nptnnfrs/02nptnnfrs"
-        },
-
-        {
-          "@type": "MusicRecording",
-          "name": "03",
-          "url": "https://soundcloud.com/nptnnfrs/nova"
-        },
-
-        {
-          "@type": "MusicRecording",
-          "name": "00 (bye)",
-          "url": "https://soundcloud.com/nptnnfrs/00bye"
-        }
-
-      ]
+      }
     }
   }
   </script>
@@ -440,10 +412,10 @@
     }
 
 
-    /* TRACKS */
+    /* EP / COVER */
 
 
-    .tracks-section {
+    .ep-section {
 
       margin-bottom:
         105px;
@@ -469,49 +441,51 @@
     }
 
 
-    .track {
+    .ep-link-main {
 
       display:
-        grid;
-
-      grid-template-columns:
-        104px 55px 1fr auto;
+        flex;
 
       align-items:
         center;
 
       gap:
-        22px;
+        30px;
 
       padding:
-        18px 0;
+        24px 0;
 
       border-top:
         1px solid #242022;
-    }
-
-
-    .track:last-child {
 
       border-bottom:
         1px solid #242022;
+
+      transition:
+        color 0.2s ease;
     }
 
 
-    .track-cover {
+    .ep-cover {
 
       width:
-        104px;
+        150px;
 
       height:
-        104px;
+        150px;
+
+      flex-shrink:
+        0;
 
       overflow:
         hidden;
     }
 
 
-    .track-cover img {
+    .ep-cover img {
+
+      display:
+        block;
 
       width:
         100%;
@@ -519,47 +493,47 @@
       height:
         100%;
 
-      display:
-        block;
-
       object-fit:
         cover;
     }
 
 
-    .track-number {
+    .ep-name {
 
       font-size:
-        12px;
-
-      letter-spacing:
-        0.12em;
-
-      color:
-        #8f8789;
-    }
-
-
-    .track-name {
-
-      font-size:
-        15px;
+        19px;
 
       font-weight:
         300;
 
       letter-spacing:
-        0.05em;
+        0.06em;
+
+      color:
+        #b17b88;
+
+      text-transform:
+        lowercase;
     }
 
 
-    .track-arrow {
+    .ep-arrow {
+
+      margin-left:
+        auto;
 
       font-size:
-        15px;
+        18px;
 
       color:
         #8f8789;
+    }
+
+
+    .ep-link-main:hover .ep-arrow {
+
+      color:
+        #c08a96;
     }
 
 
@@ -760,7 +734,7 @@
       }
 
 
-      .tracks-section,
+      .ep-section,
       .about,
       .listen {
 
@@ -769,40 +743,30 @@
       }
 
 
-      .track {
-
-        grid-template-columns:
-          64px 42px 1fr auto;
+      .ep-link-main {
 
         gap:
-          14px;
+          18px;
 
         padding:
-          14px 0;
+          18px 0;
       }
 
 
-      .track-cover {
+      .ep-cover {
 
         width:
-          64px;
+          90px;
 
         height:
-          64px;
+          90px;
       }
 
 
-      .track-number {
+      .ep-name {
 
         font-size:
-          10px;
-      }
-
-
-      .track-name {
-
-        font-size:
-          13px;
+          15px;
       }
 
 
@@ -913,170 +877,41 @@
 
 
 
-    <!-- TRACKLIST -->
+    <!-- EP -->
 
 
-    <section class="tracks-section">
+    <section class="ep-section">
 
 
       <div class="section-label">
-        nptnnfrs-bye
+        EP
       </div>
 
 
-
-      <!-- 01 -->
-
-
       <a
-        class="track"
-        href="https://soundcloud.com/nptnnfrs/01a1"
+        class="ep-link-main"
+        href="https://soundcloud.com/nptnnfrs/sets/bye"
         target="_blank"
         rel="noopener noreferrer"
       >
 
 
-        <div class="track-cover">
+        <div class="ep-cover">
 
           <img
-            src="bye-cover.jpg"
-            alt="NPTNNFRS — BYE"
+            src="cover.jpg"
+            alt="NPTNNFRS — nptnnfrs-bye (micro ep)"
           >
 
         </div>
 
 
-        <div class="track-number">
-          01
+        <div class="ep-name">
+          nptnnfrs-bye (micro ep)
         </div>
 
 
-        <div class="track-name">
-          01
-        </div>
-
-
-        <div class="track-arrow">
-          ↗
-        </div>
-
-
-      </a>
-
-
-
-      <!-- 02 -->
-
-
-      <a
-        class="track"
-        href="https://soundcloud.com/nptnnfrs/02nptnnfrs"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-
-
-        <div class="track-cover">
-
-          <img
-            src="bye-cover.jpg"
-            alt="NPTNNFRS — BYE"
-          >
-
-        </div>
-
-
-        <div class="track-number">
-          02
-        </div>
-
-
-        <div class="track-name">
-          02
-        </div>
-
-
-        <div class="track-arrow">
-          ↗
-        </div>
-
-
-      </a>
-
-
-
-      <!-- 03 -->
-
-
-      <a
-        class="track"
-        href="https://soundcloud.com/nptnnfrs/nova"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-
-
-        <div class="track-cover">
-
-          <img
-            src="bye-cover.jpg"
-            alt="NPTNNFRS — BYE"
-          >
-
-        </div>
-
-
-        <div class="track-number">
-          03
-        </div>
-
-
-        <div class="track-name">
-          03
-        </div>
-
-
-        <div class="track-arrow">
-          ↗
-        </div>
-
-
-      </a>
-
-
-
-      <!-- 00 -->
-
-
-      <a
-        class="track"
-        href="https://soundcloud.com/nptnnfrs/00bye"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-
-
-        <div class="track-cover">
-
-          <img
-            src="bye-cover.jpg"
-            alt="NPTNNFRS — BYE"
-          >
-
-        </div>
-
-
-        <div class="track-number">
-          00
-        </div>
-
-
-        <div class="track-name">
-          (bye)
-        </div>
-
-
-        <div class="track-arrow">
+        <div class="ep-arrow">
           ↗
         </div>
 
