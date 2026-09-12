@@ -30,8 +30,12 @@
     content="Z9f31_1MJIWvRLWUlY4CwXYN2rr6yoZfmUoxRrGMLs4"
   >
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="NPTNNFRS — BYE">
+  <!-- OPEN GRAPH -->
+
+  <meta
+    property="og:title"
+    content="NPTNNFRS — BYE"
+  >
 
   <meta
     property="og:description"
@@ -58,7 +62,8 @@
     content="NPTNNFRS — BYE"
   >
 
-  <!-- Twitter -->
+  <!-- TWITTER -->
+
   <meta
     name="twitter:card"
     content="summary_large_image"
@@ -79,14 +84,16 @@
     content="https://nptnnfrs.github.io/cover.jpg"
   >
 
-  <!-- Favicon -->
+  <!-- FAVICON -->
+
   <link
     rel="icon"
     type="image/x-icon"
     href="favicon.ico"
   >
 
-  <!-- Font -->
+  <!-- FONT -->
+
   <link
     rel="preconnect"
     href="https://fonts.googleapis.com"
@@ -103,7 +110,8 @@
     rel="stylesheet"
   >
 
-  <!-- Structured Data -->
+  <!-- STRUCTURED DATA -->
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -132,6 +140,7 @@
   }
   </script>
 
+
   <style>
 
     * {
@@ -145,7 +154,10 @@
     body {
       margin: 0;
       background: #050505;
-      color: #eee8e9;
+
+      /* ROSA HUESO */
+      color: #e7d9da;
+
       font-family: "Roboto", Helvetica, Arial, sans-serif;
       font-weight: 300;
       letter-spacing: 0.01em;
@@ -160,266 +172,452 @@
       color: #c08a96;
     }
 
+
+    /* =========================
+       MAIN CONTAINER
+       ========================= */
+
     .site {
       width: 100%;
       max-width: 1500px;
       margin: 0 auto;
-      padding: 42px 52px 34px;
+
+      padding: 34px 52px 30px;
     }
 
-    /* HEADER */
+
+    /* =========================
+       HEADER
+       ========================= */
 
     header {
-      margin-bottom: 90px;
+      margin-bottom: 58px;
     }
 
     .artist-name {
-      font-size: 24px;
+      font-size: 22px;
       line-height: 1.1;
+
       letter-spacing: 0.22em;
+
       font-weight: 300;
-      margin: 0 0 10px;
+
+      margin: 0 0 8px;
     }
 
     .project-name {
       color: #b17b88;
-      font-size: 14px;
+
+      font-size: 13px;
+
       letter-spacing: 0.08em;
+
       margin: 0;
     }
 
-    /* HERO */
+
+    /* =========================
+       HERO
+       ========================= */
 
     .hero {
-      min-height: 74vh;
+
+      min-height: 70vh;
+
       display: grid;
+
       grid-template-columns: 0.8fr 1.2fr;
-      gap: 62px;
+
+      gap: 58px;
+
       align-items: center;
-      margin-bottom: 130px;
+
+      margin-bottom: 105px;
     }
 
+
+    /* IMAGE */
+
     .hero-image {
+
       display: flex;
+
       align-items: center;
+
       justify-content: flex-start;
     }
 
     .hero-image img {
+
       display: block;
+
       width: 100%;
+
       max-width: 620px;
-      max-height: 74vh;
-      object-fit: cover;
+
+      /*
+        The image keeps its original proportions.
+        It is allowed to extend vertically so the
+        upper part of the photograph remains visible.
+      */
+
+      max-height: 78vh;
+
+      height: auto;
+
+      object-fit: contain;
     }
 
+
+    /* HERO TEXT */
+
     .hero-copy {
+
       display: flex;
+
       flex-direction: column;
+
       justify-content: center;
+
       align-items: flex-start;
     }
 
     .hero-label {
+
       color: #b17b88;
-      font-size: 16px;
+
+      font-size: 14px;
+
       letter-spacing: 0.16em;
-      margin-bottom: 50px;
+
+      margin-bottom: 40px;
     }
 
     .hero-title {
-      font-size: 20px;
+
+      font-size: 18px;
+
       line-height: 1.4;
+
       letter-spacing: 0.02em;
-      margin-bottom: 55px;
+
+      margin-bottom: 46px;
     }
 
     .hero-link {
+
       display: inline-block;
-      font-size: 13px;
+
+      font-size: 12px;
+
       letter-spacing: 0.14em;
+
       text-transform: uppercase;
-      padding-bottom: 10px;
+
+      padding-bottom: 8px;
+
       border-bottom: 1px solid #b17b88;
     }
 
-    /* SECTIONS */
+
+    /* =========================
+       SECTIONS
+       ========================= */
 
     section {
-      margin-bottom: 130px;
+
+      margin-bottom: 105px;
     }
 
     .section-label {
+
       color: #b17b88;
-      font-size: 13px;
+
+      font-size: 12px;
+
       letter-spacing: 0.16em;
+
       text-transform: uppercase;
-      margin-bottom: 38px;
+
+      margin-bottom: 32px;
     }
 
-    /* EP */
+
+    /* =========================
+       EP
+       ========================= */
 
     .ep-link {
+
       display: flex;
+
       align-items: center;
-      gap: 28px;
+
+      gap: 25px;
+
       width: fit-content;
     }
 
     .ep-cover {
-      width: 150px;
-      height: 150px;
+
+      width: 140px;
+
+      height: 140px;
+
       object-fit: cover;
+
       display: block;
     }
 
     .ep-title {
+
       color: #b17b88;
-      font-size: 18px;
+
+      font-size: 16px;
+
       letter-spacing: 0.05em;
     }
 
     .ep-arrow {
-      color: #eee8e9;
-      font-size: 17px;
+
+      color: #e7d9da;
+
+      font-size: 15px;
+
       margin-left: 4px;
     }
 
     .ep-link:hover .ep-arrow {
+
       color: #c08a96;
     }
 
-    /* ABOUT */
+
+    /* =========================
+       ABOUT
+       ========================= */
 
     .about-text {
-      max-width: 880px;
-      font-size: 20px;
-      line-height: 1.8;
+
+      max-width: 850px;
+
+      font-size: 18px;
+
+      line-height: 1.75;
+
       margin: 0;
+
+      /*
+        Rosa hueso suave en lugar de blanco.
+      */
+      color: #e7d9da;
     }
 
-    /* LISTEN */
+
+    /* =========================
+       LISTEN
+       ========================= */
 
     .listen-list {
+
       display: flex;
+
       flex-direction: column;
+
       align-items: flex-start;
-      gap: 15px;
+
+      gap: 13px;
     }
 
     .listen-link {
-      font-size: 15px;
+
+      font-size: 14px;
+
       letter-spacing: 0.04em;
+
+      color: #e7d9da;
     }
 
     .disabled {
-      color: #777;
+
+      color: #827879;
+
       cursor: default;
     }
 
     .disabled:hover {
-      color: #777;
+
+      color: #827879;
     }
 
-    /* FOOTER */
+
+    /* =========================
+       FOOTER
+       ========================= */
 
     footer {
-      padding-top: 30px;
+
+      padding-top: 26px;
+
       border-top: 1px solid #1b1b1b;
+
       display: flex;
+
       justify-content: space-between;
+
       gap: 30px;
-      font-size: 11px;
-      color: #777;
+
+      font-size: 10px;
+
+      color: #827879;
+
       letter-spacing: 0.05em;
     }
 
-    /* MOBILE */
+
+    /* =========================
+       MOBILE
+       ========================= */
 
     @media (max-width: 900px) {
 
       .site {
-        padding: 30px 24px 28px;
+
+        padding: 28px 22px 26px;
       }
 
       header {
-        margin-bottom: 60px;
+
+        margin-bottom: 48px;
       }
 
       .artist-name {
-        font-size: 21px;
+
+        font-size: 20px;
       }
 
       .project-name {
+
         font-size: 12px;
       }
 
       .hero {
+
         min-height: auto;
+
         display: flex;
+
         flex-direction: column;
+
         align-items: stretch;
-        gap: 55px;
-        margin-bottom: 100px;
+
+        gap: 44px;
+
+        margin-bottom: 85px;
       }
 
       .hero-image {
+
         justify-content: center;
       }
 
       .hero-image img {
+
         width: 100%;
+
         max-width: 100%;
+
         max-height: none;
+
+        height: auto;
+
+        object-fit: contain;
       }
 
       .hero-copy {
+
         align-items: flex-start;
       }
 
       .hero-label {
-        margin-bottom: 30px;
+
+        margin-bottom: 27px;
+
+        font-size: 13px;
       }
 
       .hero-title {
-        font-size: 19px;
-        margin-bottom: 40px;
+
+        font-size: 17px;
+
+        margin-bottom: 36px;
+      }
+
+      .hero-link {
+
+        font-size: 11px;
       }
 
       section {
-        margin-bottom: 100px;
+
+        margin-bottom: 85px;
+      }
+
+      .section-label {
+
+        font-size: 11px;
+
+        margin-bottom: 27px;
       }
 
       .about-text {
-        font-size: 18px;
+
+        font-size: 17px;
+
         line-height: 1.7;
       }
 
       .ep-cover {
-        width: 90px;
-        height: 90px;
+
+        width: 86px;
+
+        height: 86px;
       }
 
       .ep-title {
-        font-size: 15px;
+
+        font-size: 14px;
+      }
+
+      .listen-link {
+
+        font-size: 13px;
       }
 
       footer {
+
         flex-direction: column;
-        gap: 8px;
+
+        gap: 7px;
       }
+
     }
 
   </style>
 </head>
 
+
 <body>
 
   <div class="site">
 
-    <!-- HEADER -->
+
+    <!-- =========================
+         HEADER
+         ========================= -->
 
     <header>
+
       <h1 class="artist-name">
         NPTNNFRS
       </h1>
@@ -427,23 +625,29 @@
       <p class="project-name">
         nptnnfrs-bye (micro ep)
       </p>
+
     </header>
 
 
-    <!-- HERO -->
+    <!-- =========================
+         HERO
+         ========================= -->
 
     <main>
 
       <section class="hero">
 
+
         <div class="hero-image">
 
-          <!-- IMPORTANT:
-               This is the exact filename currently in GitHub.
+          <!--
+            Exact current filename.
+            ?v=3 forces the browser to load
+            the newest version of the image.
           -->
 
           <img
-            src="nptnnfrs-main.jpg"
+            src="nptnnfrs-main.jpg?v=3"
             alt="NPTNNFRS — BYE"
           >
 
@@ -471,16 +675,20 @@
 
         </div>
 
+
       </section>
 
 
-      <!-- EP -->
+      <!-- =========================
+           EP
+           ========================= -->
 
       <section>
 
         <div class="section-label">
           EP
         </div>
+
 
         <a
           class="ep-link"
@@ -496,8 +704,13 @@
           >
 
           <div class="ep-title">
+
             nptnnfrs-bye (micro ep)
-            <span class="ep-arrow">↗</span>
+
+            <span class="ep-arrow">
+              ↗
+            </span>
+
           </div>
 
         </a>
@@ -505,7 +718,9 @@
       </section>
 
 
-      <!-- ABOUT -->
+      <!-- =========================
+           ABOUT
+           ========================= -->
 
       <section>
 
@@ -513,20 +728,26 @@
           ABOUT
         </div>
 
+
         <p class="about-text">
+
           NPTNNFRS is an independent electronic music project from Argentina exploring dark experimental techno, electronic pop, manipulated vocals, atmospheric textures and broken club rhythms. BYE is a micro EP about absence, distortion and emotional residue — four fragments moving through dark club spaces, intimate voices and unstable rhythms. A quiet study of what lingers when something is already gone.
+
         </p>
 
       </section>
 
 
-      <!-- LISTEN -->
+      <!-- =========================
+           LISTEN
+           ========================= -->
 
       <section>
 
         <div class="section-label">
           LISTEN
         </div>
+
 
         <div class="listen-list">
 
@@ -539,6 +760,7 @@
             BYE / SoundCloud
           </a>
 
+
           <a
             class="listen-link"
             href="https://soundcloud.com/nptnnfrs"
@@ -547,6 +769,7 @@
           >
             SoundCloud
           </a>
+
 
           <a
             class="listen-link"
@@ -557,9 +780,11 @@
             YouTube
           </a>
 
+
           <span class="listen-link disabled">
             Spotify / SOON
           </span>
+
 
           <a
             class="listen-link"
@@ -577,7 +802,9 @@
     </main>
 
 
-    <!-- FOOTER -->
+    <!-- =========================
+         FOOTER
+         ========================= -->
 
     <footer>
 
@@ -590,6 +817,7 @@
       </div>
 
     </footer>
+
 
   </div>
 
