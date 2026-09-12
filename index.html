@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <meta charset="UTF-8">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
   <title>NPTNNFRS — BYE</title>
 
@@ -18,41 +20,22 @@
     content="NPTNNFRS"
   >
 
-  <meta
-    name="robots"
-    content="index, follow"
-  >
-
   <link
     rel="canonical"
     href="https://nptnnfrs.github.io/"
   >
-
-  <link
-    rel="icon"
-    type="image/x-icon"
-    href="favicon.ico"
-  >
-
-
-  <!-- GOOGLE SEARCH CONSOLE -->
 
   <meta
     name="google-site-verification"
     content="Z9f31_1MJIWvRLWUlY4CwXYN2rr6yoZfmUoxRrGMLs4"
   >
 
-
-  <!-- OPEN GRAPH -->
-
-  <meta
-    property="og:title"
-    content="NPTNNFRS — BYE"
-  >
+  <!-- Open Graph -->
+  <meta property="og:title" content="NPTNNFRS — BYE">
 
   <meta
     property="og:description"
-    content="nptnnfrs-bye (micro ep)"
+    content="ghosts crying on your shoulder"
   >
 
   <meta
@@ -75,9 +58,7 @@
     content="NPTNNFRS — BYE"
   >
 
-
-  <!-- TWITTER -->
-
+  <!-- Twitter -->
   <meta
     name="twitter:card"
     content="summary_large_image"
@@ -90,7 +71,7 @@
 
   <meta
     name="twitter:description"
-    content="nptnnfrs-bye (micro ep)"
+    content="ghosts crying on your shoulder"
   >
 
   <meta
@@ -98,59 +79,58 @@
     content="https://nptnnfrs.github.io/cover.jpg"
   >
 
+  <!-- Favicon -->
+  <link
+    rel="icon"
+    type="image/x-icon"
+    href="favicon.ico"
+  >
 
-  <!-- STRUCTURED DATA -->
+  <!-- Font -->
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
 
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Structured Data -->
   <script type="application/ld+json">
-
   {
     "@context": "https://schema.org",
-
     "@type": "MusicGroup",
-
-    "@id": "https://nptnnfrs.github.io/#artist",
-
     "name": "NPTNNFRS",
-
     "url": "https://nptnnfrs.github.io/",
-
     "genre": [
       "Electronic",
       "Experimental",
       "Techno",
       "Electronic Pop"
     ],
-
     "sameAs": [
       "https://soundcloud.com/nptnnfrs",
       "https://www.youtube.com/@nptnnfrss",
       "https://www.instagram.com/nptnnfrs/"
     ],
-
     "album": {
-
       "@type": "MusicAlbum",
-
       "name": "BYE",
-
       "albumReleaseType": "EPRelease",
-
       "datePublished": "2026",
-
       "url": "https://soundcloud.com/nptnnfrs/sets/bye",
-
-      "image": "https://nptnnfrs.github.io/cover.jpg",
-
-      "byArtist": {
-        "@id": "https://nptnnfrs.github.io/#artist"
-      }
-
+      "image": "https://nptnnfrs.github.io/cover.jpg"
     }
-
   }
-
   </script>
-
 
   <style>
 
@@ -158,751 +138,349 @@
       box-sizing: border-box;
     }
 
-
     html {
       scroll-behavior: smooth;
     }
 
-
     body {
-
       margin: 0;
-
       background: #050505;
-
       color: #eee8e9;
-
-      font-family:
-        "Roboto",
-        "Helvetica Neue",
-        Arial,
-        sans-serif;
-
+      font-family: "Roboto", Helvetica, Arial, sans-serif;
       font-weight: 300;
-
-      letter-spacing: 0.02em;
-
+      letter-spacing: 0.01em;
     }
-
 
     a {
-
       color: inherit;
-
       text-decoration: none;
-
     }
-
 
     a:hover {
-
       color: #c08a96;
-
     }
 
-
-    .page {
-
+    .site {
       width: 100%;
-
       max-width: 1500px;
-
       margin: 0 auto;
-
-      padding:
-        42px
-        52px
-        34px;
-
+      padding: 42px 52px 34px;
     }
-
 
     /* HEADER */
 
-
     header {
-
-      display: flex;
-
-      justify-content:
-        space-between;
-
-      align-items:
-        flex-start;
-
-      margin-bottom:
-        70px;
-
+      margin-bottom: 90px;
     }
-
-
-    .identity {
-
-      display: flex;
-
-      flex-direction:
-        column;
-
-      gap: 7px;
-
-    }
-
 
     .artist-name {
-
-      font-size: 20px;
-
+      font-size: 24px;
+      line-height: 1.1;
+      letter-spacing: 0.22em;
       font-weight: 300;
-
-      letter-spacing:
-        0.22em;
-
-      text-transform:
-        uppercase;
-
+      margin: 0 0 10px;
     }
 
-
-    .project-title {
-
-      font-size: 12px;
-
-      letter-spacing:
-        0.16em;
-
-      color:
-        #b17b88;
-
-      text-transform:
-        lowercase;
-
+    .project-name {
+      color: #b17b88;
+      font-size: 14px;
+      letter-spacing: 0.08em;
+      margin: 0;
     }
-
 
     /* HERO */
 
-
     .hero {
-
+      min-height: 74vh;
       display: grid;
-
-      grid-template-columns:
-        0.8fr 1.2fr;
-
-      gap:
-        62px;
-
-      align-items:
-        center;
-
-      min-height:
-        640px;
-
-      margin-bottom:
-        105px;
-
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 62px;
+      align-items: center;
+      margin-bottom: 130px;
     }
-
 
     .hero-image {
-
-      width: 100%;
-
       display: flex;
-
-      justify-content:
-        center;
-
-      align-items:
-        center;
-
+      align-items: center;
+      justify-content: flex-start;
     }
-
 
     .hero-image img {
-
       display: block;
-
       width: 100%;
-
-      max-width:
-        620px;
-
-      max-height:
-        74vh;
-
-      object-fit:
-        contain;
-
+      max-width: 620px;
+      max-height: 74vh;
+      object-fit: cover;
     }
 
-
-    .hero-info {
-
+    .hero-copy {
       display: flex;
-
-      flex-direction:
-        column;
-
-      justify-content:
-        center;
-
-      gap:
-        38px;
-
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
     }
 
+    .hero-label {
+      color: #b17b88;
+      font-size: 16px;
+      letter-spacing: 0.16em;
+      margin-bottom: 50px;
+    }
 
     .hero-title {
-
-      font-size:
-        14px;
-
-      letter-spacing:
-        0.18em;
-
-      text-transform:
-        lowercase;
-
-      color:
-        #b17b88;
-
+      font-size: 20px;
+      line-height: 1.4;
+      letter-spacing: 0.02em;
+      margin-bottom: 55px;
     }
 
-
-    .hero-description {
-
-      max-width:
-        520px;
-
-      font-size:
-        17px;
-
-      line-height:
-        1.75;
-
-      font-weight:
-        300;
-
-      color:
-        #d7d0d1;
-
+    .hero-link {
+      display: inline-block;
+      font-size: 13px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #b17b88;
     }
 
+    /* SECTIONS */
 
-    /* EP LINK */
-
-
-    .ep-link {
-
-      display: inline-flex;
-
-      align-items: center;
-
-      gap: 14px;
-
-      width: fit-content;
-
-      padding-bottom: 8px;
-
-      border-bottom:
-        1px solid #b17b88;
-
-      font-size: 11px;
-
-      letter-spacing:
-        0.16em;
-
-      text-transform:
-        uppercase;
-
-      color:
-        #eee8e9;
-
-      transition:
-        color 0.2s ease,
-        border-color 0.2s ease;
-
+    section {
+      margin-bottom: 130px;
     }
-
-
-    .ep-link:hover {
-
-      color:
-        #c08a96;
-
-      border-color:
-        #c08a96;
-
-    }
-
-
-    /* EP SECTION */
-
-
-    .ep-section {
-
-      margin-bottom:
-        105px;
-
-    }
-
 
     .section-label {
-
-      margin-bottom:
-        27px;
-
-      font-size:
-        11px;
-
-      letter-spacing:
-        0.18em;
-
-      text-transform:
-        uppercase;
-
-      color:
-        #b17b88;
-
+      color: #b17b88;
+      font-size: 13px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      margin-bottom: 38px;
     }
 
+    /* EP */
 
-    .ep-link-main {
-
+    .ep-link {
       display: flex;
-
       align-items: center;
-
-      gap: 30px;
-
-      padding:
-        24px 0;
-
-      border-top:
-        1px solid #242022;
-
-      border-bottom:
-        1px solid #242022;
-
-      transition:
-        color 0.2s ease;
-
+      gap: 28px;
+      width: fit-content;
     }
-
 
     .ep-cover {
-
-      width:
-        150px;
-
-      height:
-        150px;
-
-      flex-shrink:
-        0;
-
-      overflow:
-        hidden;
-
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      display: block;
     }
 
-
-    .ep-cover img {
-
-      display:
-        block;
-
-      width:
-        100%;
-
-      height:
-        100%;
-
-      object-fit:
-        cover;
-
+    .ep-title {
+      color: #b17b88;
+      font-size: 18px;
+      letter-spacing: 0.05em;
     }
-
-
-    .ep-name {
-
-      font-size:
-        19px;
-
-      font-weight:
-        300;
-
-      letter-spacing:
-        0.06em;
-
-      color:
-        #b17b88;
-
-      text-transform:
-        lowercase;
-
-    }
-
 
     .ep-arrow {
-
-      margin-left:
-        auto;
-
-      font-size:
-        18px;
-
-      color:
-        #8f8789;
-
+      color: #eee8e9;
+      font-size: 17px;
+      margin-left: 4px;
     }
 
-
-    .ep-link-main:hover .ep-arrow {
-
-      color:
-        #c08a96;
-
+    .ep-link:hover .ep-arrow {
+      color: #c08a96;
     }
-
 
     /* ABOUT */
 
-
-    .about {
-
-      max-width:
-        690px;
-
-      margin-bottom:
-        105px;
-
+    .about-text {
+      max-width: 880px;
+      font-size: 20px;
+      line-height: 1.8;
+      margin: 0;
     }
-
-
-    .about p {
-
-      margin:
-        0;
-
-      font-size:
-        16px;
-
-      line-height:
-        1.8;
-
-      font-weight:
-        300;
-
-      color:
-        #d7d0d1;
-
-    }
-
 
     /* LISTEN */
 
-
-    .listen {
-
-      margin-bottom:
-        105px;
-
+    .listen-list {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
     }
 
-
-    .listen-links {
-
-      display:
-        flex;
-
-      flex-wrap:
-        wrap;
-
-      gap:
-        30px;
-
-      font-size:
-        13px;
-
-      letter-spacing:
-        0.1em;
-
-      text-transform:
-        uppercase;
-
+    .listen-link {
+      font-size: 15px;
+      letter-spacing: 0.04em;
     }
 
-
-    .listen-links a {
-
-      transition:
-        color 0.2s ease;
-
+    .disabled {
+      color: #777;
+      cursor: default;
     }
 
-
-    .listen-links .disabled {
-
-      color:
-        #575153;
-
-      cursor:
-        default;
-
+    .disabled:hover {
+      color: #777;
     }
-
 
     /* FOOTER */
 
-
     footer {
-
-      padding-top:
-        28px;
-
-      border-top:
-        1px solid #242022;
-
-      display:
-        flex;
-
-      justify-content:
-        space-between;
-
-      gap:
-        30px;
-
-      font-size:
-        10px;
-
-      letter-spacing:
-        0.12em;
-
-      text-transform:
-        uppercase;
-
-      color:
-        #686164;
-
+      padding-top: 30px;
+      border-top: 1px solid #1b1b1b;
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      font-size: 11px;
+      color: #777;
+      letter-spacing: 0.05em;
     }
-
 
     /* MOBILE */
 
-
     @media (max-width: 900px) {
 
-
-      .page {
-
-        padding:
-          30px
-          24px
-          28px;
-
+      .site {
+        padding: 30px 24px 28px;
       }
-
 
       header {
-
-        margin-bottom:
-          50px;
-
+        margin-bottom: 60px;
       }
-
 
       .artist-name {
-
-        font-size:
-          18px;
-
+        font-size: 21px;
       }
 
+      .project-name {
+        font-size: 12px;
+      }
 
       .hero {
-
-        grid-template-columns:
-          1fr;
-
-        gap:
-          48px;
-
-        min-height:
-          auto;
-
-        margin-bottom:
-          80px;
-
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 55px;
+        margin-bottom: 100px;
       }
-
 
       .hero-image {
-
-        order:
-          1;
-
+        justify-content: center;
       }
-
 
       .hero-image img {
-
-        width:
-          100%;
-
-        max-width:
-          100%;
-
-        max-height:
-          none;
-
+        width: 100%;
+        max-width: 100%;
+        max-height: none;
       }
 
-
-      .hero-info {
-
-        order:
-          2;
-
-        gap:
-          25px;
-
+      .hero-copy {
+        align-items: flex-start;
       }
 
-
-      .hero-description {
-
-        font-size:
-          15px;
-
+      .hero-label {
+        margin-bottom: 30px;
       }
 
-
-      .ep-section,
-      .about,
-      .listen {
-
-        margin-bottom:
-          80px;
-
+      .hero-title {
+        font-size: 19px;
+        margin-bottom: 40px;
       }
 
-
-      .ep-link-main {
-
-        gap:
-          18px;
-
-        padding:
-          18px 0;
-
+      section {
+        margin-bottom: 100px;
       }
 
+      .about-text {
+        font-size: 18px;
+        line-height: 1.7;
+      }
 
       .ep-cover {
-
-        width:
-          90px;
-
-        height:
-          90px;
-
+        width: 90px;
+        height: 90px;
       }
 
-
-      .ep-name {
-
-        font-size:
-          15px;
-
+      .ep-title {
+        font-size: 15px;
       }
-
-
-      .listen-links {
-
-        gap:
-          20px;
-
-        font-size:
-          11px;
-
-      }
-
 
       footer {
-
-        flex-direction:
-          column;
-
-        gap:
-          10px;
-
+        flex-direction: column;
+        gap: 8px;
       }
-
     }
 
   </style>
-
 </head>
-
 
 <body>
 
-
-  <main class="page">
-
+  <div class="site">
 
     <!-- HEADER -->
 
-
     <header>
+      <h1 class="artist-name">
+        NPTNNFRS
+      </h1>
 
-      <div class="identity">
-
-        <div class="artist-name">
-          NPTNNFRS
-        </div>
-
-
-        <div class="project-title">
-          nptnnfrs-bye (micro ep)
-        </div>
-
-      </div>
-
+      <p class="project-name">
+        nptnnfrs-bye (micro ep)
+      </p>
     </header>
-
 
 
     <!-- HERO -->
 
+    <main>
 
-    <section class="hero">
+      <section class="hero">
 
+        <div class="hero-image">
 
-      <div class="hero-image">
+          <!-- IMPORTANT:
+               This is the exact filename currently in GitHub.
+          -->
 
-        <img
-          src="NPTNNFRS-Main.jpg"
-          alt="NPTNNFRS — BYE"
-        >
+          <img
+            src="nptnnfrs-main.jpg"
+            alt="NPTNNFRS — BYE"
+          >
 
-      </div>
-
-
-      <div class="hero-info">
-
-
-        <div class="hero-title">
-          bye
         </div>
 
 
-        <div class="hero-description">
-          ghosts crying on your shoulder
+        <div class="hero-copy">
+
+          <div class="hero-label">
+            bye
+          </div>
+
+          <div class="hero-title">
+            ghosts crying on your shoulder
+          </div>
+
+          <a
+            class="hero-link"
+            href="https://soundcloud.com/nptnnfrs/sets/bye"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Listen to the EP ↗
+          </a>
+
         </div>
 
+      </section>
+
+
+      <!-- EP -->
+
+      <section>
+
+        <div class="section-label">
+          EP
+        </div>
 
         <a
           class="ep-link"
@@ -910,163 +488,110 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          Listen to the EP ↗
-        </a>
-
-
-      </div>
-
-    </section>
-
-
-
-    <!-- EP -->
-
-
-    <section class="ep-section">
-
-
-      <div class="section-label">
-        EP
-      </div>
-
-
-      <a
-        class="ep-link-main"
-        href="https://soundcloud.com/nptnnfrs/sets/bye"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-
-
-        <div class="ep-cover">
 
           <img
+            class="ep-cover"
             src="cover.jpg"
-            alt="NPTNNFRS — nptnnfrs-bye (micro ep)"
+            alt="NPTNNFRS — BYE"
           >
 
+          <div class="ep-title">
+            nptnnfrs-bye (micro ep)
+            <span class="ep-arrow">↗</span>
+          </div>
+
+        </a>
+
+      </section>
+
+
+      <!-- ABOUT -->
+
+      <section>
+
+        <div class="section-label">
+          ABOUT
         </div>
 
+        <p class="about-text">
+          NPTNNFRS is an independent electronic music project from Argentina exploring dark experimental techno, electronic pop, manipulated vocals, atmospheric textures and broken club rhythms. BYE is a micro EP about absence, distortion and emotional residue — four fragments moving through dark club spaces, intimate voices and unstable rhythms. A quiet study of what lingers when something is already gone.
+        </p>
 
-        <div class="ep-name">
-          nptnnfrs-bye (micro ep)
+      </section>
+
+
+      <!-- LISTEN -->
+
+      <section>
+
+        <div class="section-label">
+          LISTEN
         </div>
 
+        <div class="listen-list">
 
-        <div class="ep-arrow">
-          ↗
+          <a
+            class="listen-link"
+            href="https://soundcloud.com/nptnnfrs/sets/bye"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            BYE / SoundCloud
+          </a>
+
+          <a
+            class="listen-link"
+            href="https://soundcloud.com/nptnnfrs"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            SoundCloud
+          </a>
+
+          <a
+            class="listen-link"
+            href="https://www.youtube.com/@nptnnfrss"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            YouTube
+          </a>
+
+          <span class="listen-link disabled">
+            Spotify / SOON
+          </span>
+
+          <a
+            class="listen-link"
+            href="https://www.instagram.com/nptnnfrs/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram
+          </a>
+
         </div>
 
+      </section>
 
-      </a>
-
-    </section>
-
-
-
-    <!-- ABOUT -->
-
-
-    <section class="about">
-
-
-      <div class="section-label">
-        ABOUT
-      </div>
-
-
-      <p>
-        NPTNNFRS is an independent electronic music project from Argentina exploring dark experimental techno, electronic pop, manipulated vocals, atmospheric textures and broken club rhythms. BYE is a micro EP about absence, distortion and emotional residue — four fragments moving through dark club spaces, intimate voices and unstable rhythms. A quiet study of what lingers when something is already gone.
-      </p>
-
-
-    </section>
-
-
-
-    <!-- LISTEN -->
-
-
-    <section class="listen">
-
-
-      <div class="section-label">
-        LISTEN
-      </div>
-
-
-      <div class="listen-links">
-
-
-        <a
-          href="https://soundcloud.com/nptnnfrs/sets/bye"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          BYE / SoundCloud
-        </a>
-
-
-        <a
-          href="https://soundcloud.com/nptnnfrs"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          SoundCloud
-        </a>
-
-
-        <a
-          href="https://www.youtube.com/@nptnnfrss"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          YouTube
-        </a>
-
-
-        <span class="disabled">
-          Spotify / SOON
-        </span>
-
-
-        <a
-          href="https://www.instagram.com/nptnnfrs/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Instagram
-        </a>
-
-
-      </div>
-
-    </section>
-
+    </main>
 
 
     <!-- FOOTER -->
 
-
     <footer>
-
 
       <div>
         © 2026 NPTNNFRS
       </div>
 
-
       <div>
         Produced / written / performed by NPTNNFRS
       </div>
 
-
     </footer>
 
-
-  </main>
-
+  </div>
 
 </body>
 </html>
