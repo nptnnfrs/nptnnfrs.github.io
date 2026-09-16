@@ -251,15 +251,15 @@
 
 
     /* =========================
-       MAIN CONTAINER (ANCHO ORIGINAL)
+       MAIN CONTAINER (ANCHO ORIGINAL Y PROLIJO)
        ========================= */
 
     .site {
       width: 100%;
-      max-width: 1500px;
+      max-width: 900px; /* Ancho ajustado y estético como pediste */
       margin: 0 auto;
 
-      padding: 34px 52px 30px;
+      padding: 50px 30px;
     }
 
 
@@ -299,17 +299,17 @@
 
     .hero {
 
-      min-height: 70vh;
+      min-height: 60vh;
 
       display: grid;
 
       grid-template-columns: 0.8fr 1.2fr;
 
-      gap: 58px;
+      gap: 48px;
 
       align-items: center;
 
-      margin-bottom: 105px;
+      margin-bottom: 85px;
     }
 
 
@@ -330,9 +330,9 @@
 
       width: 100%;
 
-      max-width: 620px;
+      max-width: 450px;
 
-      max-height: 78vh;
+      max-height: 70vh;
 
       height: auto;
 
@@ -361,7 +361,7 @@
 
       letter-spacing: 0.16em;
 
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
 
     .hero-title {
@@ -372,7 +372,7 @@
 
       letter-spacing: 0.02em;
 
-      margin-bottom: 46px;
+      margin-bottom: 36px;
     }
 
     .hero-link {
@@ -397,7 +397,7 @@
 
     section {
 
-      margin-bottom: 105px;
+      margin-bottom: 85px;
     }
 
     .section-label {
@@ -431,9 +431,9 @@
 
     .ep-cover {
 
-      width: 140px;
+      width: 120px;
 
-      height: 140px;
+      height: 120px;
 
       object-fit: cover;
 
@@ -470,9 +470,9 @@
 
     .about-text, .manifesto-text {
 
-      max-width: 850px;
+      max-width: 100%;
 
-      font-size: 18px;
+      font-size: 17px;
 
       line-height: 1.75;
 
@@ -487,24 +487,24 @@
 
     .manifesto-heading {
       color: #b17b88;
-      font-size: 15px;
+      font-size: 14px;
       letter-spacing: 0.12em;
-      margin: 50px 0 20px 0;
+      margin: 40px 0 15px 0;
       text-transform: uppercase;
       font-weight: 400;
     }
 
     .manifesto-list {
-      max-width: 850px;
-      font-size: 18px;
+      max-width: 100%;
+      font-size: 17px;
       line-height: 1.75;
       color: #e7d9da;
-      margin: 0 0 40px 20px;
+      margin: 0 0 30px 20px;
       padding-left: 0;
     }
 
     .manifesto-list li {
-      margin-bottom: 14px;
+      margin-bottom: 12px;
     }
 
     .manifesto-list strong {
@@ -515,49 +515,47 @@
     .track-sequence-box {
       background: #0a0a0a;
       border-left: 2px solid #b17b88;
-      padding: 20px;
-      margin: 30px 0;
-      max-width: 850px;
+      padding: 16px;
+      margin: 25px 0;
+      max-width: 100%;
       font-family: "Roboto", monospace;
-      font-size: 15px;
+      font-size: 14px;
       color: #c08a96;
       letter-spacing: 0.08em;
     }
 
     .track-heading {
       color: #b17b88;
-      font-size: 15px;
-      margin: 35px 0 10px 0;
+      font-size: 14px;
+      margin: 30px 0 8px 0;
       letter-spacing: 0.08em;
       text-transform: uppercase;
     }
 
     /* =========================
-       GHOST COMMENT (FLOTANTE SOBRE TODA LA WEB)
+       GHOST COMMENT (INTEGRADO EN EL FLUJO DEL CONTENIDO)
        ========================= */
     .ghost-comment {
-      position: fixed; /* Flota fija en la pantalla por encima de todo */
-      bottom: 6vh;     
-      right: 4vw;      
-      max-width: 260px;
-      z-index: 9999;   /* Asegura que pase por arriba del texto e imágenes */
+      display: block;
+      width: 100%;
+      max-width: 320px;
+      margin: 40px auto; /* Centrado y contenido dentro del ancho de la web */
       
-      /* Inversión de colores y transparencia fantasma */
-      filter: invert(1) opacity(0.6); 
+      /* Inversión de colores para modo oscuro y transparencia fantasma */
+      filter: invert(1) opacity(0.65); 
       
-      /* Animación continua de aparición y desaparición */
-      animation: phantomFloat 14s infinite ease-in-out;
+      /* Animación sutil de aparición y desaparición */
+      animation: phantomFade 12s infinite ease-in-out;
       
-      pointer-events: none; /* Permite hacer click a través de la imagen */
+      pointer-events: none;
     }
 
-    @keyframes phantomFloat {
-      0%   { opacity: 0; transform: translateY(10px); }
-      20%  { opacity: 0; }
-      40%  { opacity: 0.7; transform: translateY(0px); }
-      60%  { opacity: 0.7; transform: translateY(-5px); }
-      80%  { opacity: 0; transform: translateY(-10px); }
-      100% { opacity: 0; transform: translateY(10px); }
+    @keyframes phantomFade {
+      0%   { opacity: 0; }
+      30%  { opacity: 0; }
+      50%  { opacity: 0.75; }
+      70%  { opacity: 0; }
+      100% { opacity: 0; }
     }
 
 
@@ -630,17 +628,17 @@
 
       .site {
 
-        padding: 28px 22px 26px;
+        padding: 24px 18px;
       }
 
       header {
 
-        margin-bottom: 48px;
+        margin-bottom: 40px;
       }
 
       .artist-name {
 
-        font-size: 20px;
+        font-size: 19px;
       }
 
       .project-name {
@@ -658,9 +656,9 @@
 
         align-items: stretch;
 
-        gap: 44px;
+        gap: 32px;
 
-        margin-bottom: 85px;
+        margin-bottom: 65px;
       }
 
       .hero-image {
@@ -673,12 +671,6 @@
         width: 100%;
 
         max-width: 100%;
-
-        max-height: none;
-
-        height: auto;
-
-        object-fit: contain;
       }
 
       .hero-copy {
@@ -688,73 +680,66 @@
 
       .hero-label {
 
-        margin-bottom: 27px;
+        margin-bottom: 20px;
 
         font-size: 13px;
       }
 
       .hero-title {
 
-        font-size: 17px;
+        font-size: 16px;
 
-        margin-bottom: 36px;
-      }
-
-      .hero-link {
-
-        font-size: 11px;
+        margin-bottom: 28px;
       }
 
       section {
 
-        margin-bottom: 85px;
+        margin-bottom: 65px;
       }
 
       .section-label {
 
         font-size: 11px;
 
-        margin-bottom: 27px;
+        margin-bottom: 20px;
       }
 
       .about-text, .manifesto-text {
 
-        font-size: 17px;
+        font-size: 16px;
 
-        line-height: 1.7;
+        line-height: 1.65;
       }
 
       .manifesto-heading {
         font-size: 13px;
-        margin: 40px 0 15px 0;
+        margin: 30px 0 12px 0;
       }
 
       .manifesto-list {
-        font-size: 17px;
-        line-height: 1.7;
+        font-size: 16px;
+        line-height: 1.65;
       }
 
       .track-sequence-box {
         font-size: 13px;
-        padding: 15px;
+        padding: 14px;
       }
 
       .track-heading {
-        font-size: 14px;
-        margin: 30px 0 10px 0;
+        font-size: 13px;
       }
 
       .ghost-comment {
-        max-width: 190px;
-        right: 3vw;
-        bottom: 4vh;
+        max-width: 240px;
+        margin: 30px auto;
       }
 
       .ep-cover {
 
-        width: 86px;
+        width: 80px;
 
-        height: 86px;
+        height: 80px;
       }
 
       .ep-title {
@@ -781,15 +766,6 @@
 
 
 <body>
-
-  <!-- =========================
-        GHOST COMMENT (FLOTANTE SOBRE TODA LA WEB)
-        ========================= -->
-  <img 
-    class="ghost-comment" 
-    src="Captura de pantalla 2026-09-11 231616.png" 
-    alt="Slightly creepy comment"
-  >
 
   <div class="site">
 
@@ -989,6 +965,15 @@
         <p class="manifesto-text">
           <i>Coda / Deconstructed Sound Design.</i> The point of collapse and return to zero. The rhythmic patterns progressively disappear. Only the residue of the signal remains—the reverb tails of the voice and synthetic air—closing the Micro EP with a gesture of conceptual farewell that dissolves into silence.
         </p>
+        
+        <!-- =========================
+              GHOST COMMENT (FADING INLINE)
+              ========================= -->
+        <img 
+          class="ghost-comment" 
+          src="Captura de pantalla 2026-09-11 231616.png" 
+          alt="Slightly creepy comment"
+        >
 
       </section>
 
