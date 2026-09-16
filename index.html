@@ -251,15 +251,15 @@
 
 
     /* =========================
-       MAIN CONTAINER (ANCHO ORIGINAL Y PROLIJO)
+       MAIN CONTAINER (ALINEADO A LA IZQUIERDA Y COMPACTO)
        ========================= */
 
     .site {
       width: 100%;
-      max-width: 900px; /* Ancho ajustado y estético como pediste */
-      margin: 0 auto;
+      max-width: 1100px; /* Ancho compacto total */
+      margin: 0;          /* Cero auto para que quede pegado a la izquierda */
 
-      padding: 50px 30px;
+      padding: 30px 35px; /* Márgenes internos prolijos */
     }
 
 
@@ -268,7 +268,7 @@
        ========================= */
 
     header {
-      margin-bottom: 58px;
+      margin-bottom: 45px;
     }
 
     .artist-name {
@@ -299,17 +299,17 @@
 
     .hero {
 
-      min-height: 60vh;
+      min-height: 50vh;
 
       display: grid;
 
-      grid-template-columns: 0.8fr 1.2fr;
+      grid-template-columns: 320px 1fr; /* Foto más compacta a la izquierda y texto al lado */
 
-      gap: 48px;
+      gap: 40px;
 
       align-items: center;
 
-      margin-bottom: 85px;
+      margin-bottom: 80px;
     }
 
 
@@ -330,9 +330,9 @@
 
       width: 100%;
 
-      max-width: 450px;
+      max-width: 320px; /* Foto contenida y angosta */
 
-      max-height: 70vh;
+      max-height: 65vh;
 
       height: auto;
 
@@ -357,22 +357,22 @@
 
       color: #b17b88;
 
-      font-size: 14px;
+      font-size: 13px;
 
       letter-spacing: 0.16em;
 
-      margin-bottom: 30px;
+      margin-bottom: 25px;
     }
 
     .hero-title {
 
-      font-size: 18px;
+      font-size: 17px;
 
       line-height: 1.4;
 
       letter-spacing: 0.02em;
 
-      margin-bottom: 36px;
+      margin-bottom: 30px;
     }
 
     .hero-link {
@@ -385,7 +385,7 @@
 
       text-transform: uppercase;
 
-      padding-bottom: 8px;
+      padding-bottom: 6px;
 
       border-bottom: 1px solid #b17b88;
     }
@@ -397,7 +397,7 @@
 
     section {
 
-      margin-bottom: 85px;
+      margin-bottom: 80px;
     }
 
     .section-label {
@@ -410,7 +410,7 @@
 
       text-transform: uppercase;
 
-      margin-bottom: 32px;
+      margin-bottom: 25px;
     }
 
 
@@ -424,16 +424,16 @@
 
       align-items: center;
 
-      gap: 25px;
+      gap: 20px;
 
       width: fit-content;
     }
 
     .ep-cover {
 
-      width: 120px;
+      width: 100px;
 
-      height: 120px;
+      height: 100px;
 
       object-fit: cover;
 
@@ -444,7 +444,7 @@
 
       color: #b17b88;
 
-      font-size: 16px;
+      font-size: 15px;
 
       letter-spacing: 0.05em;
     }
@@ -453,7 +453,7 @@
 
       color: #e7d9da;
 
-      font-size: 15px;
+      font-size: 14px;
 
       margin-left: 4px;
     }
@@ -470,11 +470,11 @@
 
     .about-text, .manifesto-text {
 
-      max-width: 100%;
+      max-width: 800px; /* Textos acotados para lectura cómoda a la izquierda */
 
-      font-size: 17px;
+      font-size: 16px;
 
-      line-height: 1.75;
+      line-height: 1.7;
 
       margin: 0;
 
@@ -482,24 +482,24 @@
     }
     
     .manifesto-text {
-      margin-bottom: 22px;
+      margin-bottom: 20px;
     }
 
     .manifesto-heading {
       color: #b17b88;
       font-size: 14px;
       letter-spacing: 0.12em;
-      margin: 40px 0 15px 0;
+      margin: 35px 0 12px 0;
       text-transform: uppercase;
       font-weight: 400;
     }
 
     .manifesto-list {
-      max-width: 100%;
-      font-size: 17px;
-      line-height: 1.75;
+      max-width: 800px;
+      font-size: 16px;
+      line-height: 1.7;
       color: #e7d9da;
-      margin: 0 0 30px 20px;
+      margin: 0 0 30px 18px;
       padding-left: 0;
     }
 
@@ -515,9 +515,9 @@
     .track-sequence-box {
       background: #0a0a0a;
       border-left: 2px solid #b17b88;
-      padding: 16px;
+      padding: 15px;
       margin: 25px 0;
-      max-width: 100%;
+      max-width: 800px;
       font-family: "Roboto", monospace;
       font-size: 14px;
       color: #c08a96;
@@ -527,24 +527,23 @@
     .track-heading {
       color: #b17b88;
       font-size: 14px;
-      margin: 30px 0 8px 0;
+      margin: 28px 0 8px 0;
       letter-spacing: 0.08em;
       text-transform: uppercase;
     }
 
     /* =========================
-       GHOST COMMENT (INTEGRADO EN EL FLUJO DEL CONTENIDO)
+       GHOST COMMENT (FADING INLINE)
        ========================= */
     .ghost-comment {
       display: block;
-      width: 100%;
-      max-width: 320px;
-      margin: 40px auto; /* Centrado y contenido dentro del ancho de la web */
+      max-width: 260px;
+      margin: 35px 0;
       
       /* Inversión de colores para modo oscuro y transparencia fantasma */
       filter: invert(1) opacity(0.65); 
       
-      /* Animación sutil de aparición y desaparición */
+      /* Animación continua de aparición y desaparición */
       animation: phantomFade 12s infinite ease-in-out;
       
       pointer-events: none;
@@ -553,7 +552,7 @@
     @keyframes phantomFade {
       0%   { opacity: 0; }
       30%  { opacity: 0; }
-      50%  { opacity: 0.75; }
+      50%  { opacity: 0.7; }
       70%  { opacity: 0; }
       100% { opacity: 0; }
     }
@@ -571,7 +570,7 @@
 
       align-items: flex-start;
 
-      gap: 13px;
+      gap: 12px;
     }
 
     .listen-link {
@@ -602,7 +601,7 @@
 
     footer {
 
-      padding-top: 26px;
+      padding-top: 22px;
 
       border-top: 1px solid #1b1b1b;
 
@@ -610,13 +609,15 @@
 
       justify-content: space-between;
 
-      gap: 30px;
+      gap: 20px;
 
       font-size: 10px;
 
       color: #827879;
 
       letter-spacing: 0.05em;
+
+      max-width: 800px;
     }
 
 
@@ -633,7 +634,7 @@
 
       header {
 
-        margin-bottom: 40px;
+        margin-bottom: 35px;
       }
 
       .artist-name {
@@ -656,14 +657,14 @@
 
         align-items: stretch;
 
-        gap: 32px;
+        gap: 30px;
 
-        margin-bottom: 65px;
+        margin-bottom: 60px;
       }
 
       .hero-image {
 
-        justify-content: center;
+        justify-content: flex-start;
       }
 
       .hero-image img {
@@ -680,7 +681,7 @@
 
       .hero-label {
 
-        margin-bottom: 20px;
+        margin-bottom: 18px;
 
         font-size: 13px;
       }
@@ -689,12 +690,12 @@
 
         font-size: 16px;
 
-        margin-bottom: 28px;
+        margin-bottom: 24px;
       }
 
       section {
 
-        margin-bottom: 65px;
+        margin-bottom: 60px;
       }
 
       .section-label {
@@ -713,7 +714,7 @@
 
       .manifesto-heading {
         font-size: 13px;
-        margin: 30px 0 12px 0;
+        margin: 30px 0 10px 0;
       }
 
       .manifesto-list {
@@ -731,8 +732,8 @@
       }
 
       .ghost-comment {
-        max-width: 240px;
-        margin: 30px auto;
+        max-width: 220px;
+        margin: 25px 0;
       }
 
       .ep-cover {
@@ -756,7 +757,7 @@
 
         flex-direction: column;
 
-        gap: 7px;
+        gap: 6px;
       }
 
     }
