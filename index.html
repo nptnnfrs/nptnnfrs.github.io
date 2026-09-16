@@ -251,15 +251,15 @@
 
 
     /* =========================
-       MAIN CONTAINER (ALINEADO A LA IZQUIERDA Y COMPACTO)
+       MAIN CONTAINER
        ========================= */
 
     .site {
       width: 100%;
-      max-width: 1100px; /* Ancho compacto total */
-      margin: 0;          /* Cero auto para que quede pegado a la izquierda */
+      max-width: 1500px;
+      margin: 0 auto;
 
-      padding: 30px 35px; /* Márgenes internos prolijos */
+      padding: 34px 52px 30px;
     }
 
 
@@ -268,7 +268,7 @@
        ========================= */
 
     header {
-      margin-bottom: 45px;
+      margin-bottom: 58px;
     }
 
     .artist-name {
@@ -299,17 +299,17 @@
 
     .hero {
 
-      min-height: 50vh;
+      min-height: 70vh;
 
       display: grid;
 
-      grid-template-columns: 320px 1fr; /* Foto más compacta a la izquierda y texto al lado */
+      grid-template-columns: 0.8fr 1.2fr;
 
-      gap: 40px;
+      gap: 58px;
 
       align-items: center;
 
-      margin-bottom: 80px;
+      margin-bottom: 105px;
     }
 
 
@@ -330,9 +330,15 @@
 
       width: 100%;
 
-      max-width: 320px; /* Foto contenida y angosta */
+      max-width: 620px;
 
-      max-height: 65vh;
+      /*
+        The image keeps its original proportions.
+        It is allowed to extend vertically so the
+        upper part of the photograph remains visible.
+      */
+
+      max-height: 78vh;
 
       height: auto;
 
@@ -357,22 +363,22 @@
 
       color: #b17b88;
 
-      font-size: 13px;
+      font-size: 14px;
 
       letter-spacing: 0.16em;
 
-      margin-bottom: 25px;
+      margin-bottom: 40px;
     }
 
     .hero-title {
 
-      font-size: 17px;
+      font-size: 18px;
 
       line-height: 1.4;
 
       letter-spacing: 0.02em;
 
-      margin-bottom: 30px;
+      margin-bottom: 46px;
     }
 
     .hero-link {
@@ -385,7 +391,7 @@
 
       text-transform: uppercase;
 
-      padding-bottom: 6px;
+      padding-bottom: 8px;
 
       border-bottom: 1px solid #b17b88;
     }
@@ -397,7 +403,7 @@
 
     section {
 
-      margin-bottom: 80px;
+      margin-bottom: 105px;
     }
 
     .section-label {
@@ -410,7 +416,7 @@
 
       text-transform: uppercase;
 
-      margin-bottom: 25px;
+      margin-bottom: 32px;
     }
 
 
@@ -424,16 +430,16 @@
 
       align-items: center;
 
-      gap: 20px;
+      gap: 25px;
 
       width: fit-content;
     }
 
     .ep-cover {
 
-      width: 100px;
+      width: 140px;
 
-      height: 100px;
+      height: 140px;
 
       object-fit: cover;
 
@@ -444,7 +450,7 @@
 
       color: #b17b88;
 
-      font-size: 15px;
+      font-size: 16px;
 
       letter-spacing: 0.05em;
     }
@@ -453,7 +459,7 @@
 
       color: #e7d9da;
 
-      font-size: 14px;
+      font-size: 15px;
 
       margin-left: 4px;
     }
@@ -470,41 +476,45 @@
 
     .about-text, .manifesto-text {
 
-      max-width: 800px; /* Textos acotados para lectura cómoda a la izquierda */
+      max-width: 850px;
 
-      font-size: 16px;
+      font-size: 18px;
 
-      line-height: 1.7;
+      line-height: 1.75;
 
       margin: 0;
+
+      /*
+        Rosa hueso suave en lugar de blanco.
+      */
 
       color: #e7d9da;
     }
     
     .manifesto-text {
-      margin-bottom: 20px;
+      margin-bottom: 22px;
     }
 
     .manifesto-heading {
       color: #b17b88;
-      font-size: 14px;
+      font-size: 15px;
       letter-spacing: 0.12em;
-      margin: 35px 0 12px 0;
+      margin: 50px 0 20px 0;
       text-transform: uppercase;
       font-weight: 400;
     }
 
     .manifesto-list {
-      max-width: 800px;
-      font-size: 16px;
-      line-height: 1.7;
+      max-width: 850px;
+      font-size: 18px;
+      line-height: 1.75;
       color: #e7d9da;
-      margin: 0 0 30px 18px;
+      margin: 0 0 40px 20px;
       padding-left: 0;
     }
 
     .manifesto-list li {
-      margin-bottom: 12px;
+      margin-bottom: 14px;
     }
 
     .manifesto-list strong {
@@ -515,46 +525,21 @@
     .track-sequence-box {
       background: #0a0a0a;
       border-left: 2px solid #b17b88;
-      padding: 15px;
-      margin: 25px 0;
-      max-width: 800px;
+      padding: 20px;
+      margin: 30px 0;
+      max-width: 850px;
       font-family: "Roboto", monospace;
-      font-size: 14px;
+      font-size: 15px;
       color: #c08a96;
       letter-spacing: 0.08em;
     }
 
     .track-heading {
       color: #b17b88;
-      font-size: 14px;
-      margin: 28px 0 8px 0;
+      font-size: 15px;
+      margin: 35px 0 10px 0;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-    }
-
-    /* =========================
-       GHOST COMMENT (FADING INLINE)
-       ========================= */
-    .ghost-comment {
-      display: block;
-      max-width: 260px;
-      margin: 35px 0;
-      
-      /* Inversión de colores para modo oscuro y transparencia fantasma */
-      filter: invert(1) opacity(0.65); 
-      
-      /* Animación continua de aparición y desaparición */
-      animation: phantomFade 12s infinite ease-in-out;
-      
-      pointer-events: none;
-    }
-
-    @keyframes phantomFade {
-      0%   { opacity: 0; }
-      30%  { opacity: 0; }
-      50%  { opacity: 0.7; }
-      70%  { opacity: 0; }
-      100% { opacity: 0; }
     }
 
 
@@ -570,7 +555,7 @@
 
       align-items: flex-start;
 
-      gap: 12px;
+      gap: 13px;
     }
 
     .listen-link {
@@ -601,7 +586,7 @@
 
     footer {
 
-      padding-top: 22px;
+      padding-top: 26px;
 
       border-top: 1px solid #1b1b1b;
 
@@ -609,15 +594,13 @@
 
       justify-content: space-between;
 
-      gap: 20px;
+      gap: 30px;
 
       font-size: 10px;
 
       color: #827879;
 
       letter-spacing: 0.05em;
-
-      max-width: 800px;
     }
 
 
@@ -629,17 +612,17 @@
 
       .site {
 
-        padding: 24px 18px;
+        padding: 28px 22px 26px;
       }
 
       header {
 
-        margin-bottom: 35px;
+        margin-bottom: 48px;
       }
 
       .artist-name {
 
-        font-size: 19px;
+        font-size: 20px;
       }
 
       .project-name {
@@ -657,14 +640,14 @@
 
         align-items: stretch;
 
-        gap: 30px;
+        gap: 44px;
 
-        margin-bottom: 60px;
+        margin-bottom: 85px;
       }
 
       .hero-image {
 
-        justify-content: flex-start;
+        justify-content: center;
       }
 
       .hero-image img {
@@ -672,6 +655,12 @@
         width: 100%;
 
         max-width: 100%;
+
+        max-height: none;
+
+        height: auto;
+
+        object-fit: contain;
       }
 
       .hero-copy {
@@ -681,66 +670,67 @@
 
       .hero-label {
 
-        margin-bottom: 18px;
+        margin-bottom: 27px;
 
         font-size: 13px;
       }
 
       .hero-title {
 
-        font-size: 16px;
+        font-size: 17px;
 
-        margin-bottom: 24px;
+        margin-bottom: 36px;
+      }
+
+      .hero-link {
+
+        font-size: 11px;
       }
 
       section {
 
-        margin-bottom: 60px;
+        margin-bottom: 85px;
       }
 
       .section-label {
 
         font-size: 11px;
 
-        margin-bottom: 20px;
+        margin-bottom: 27px;
       }
 
       .about-text, .manifesto-text {
 
-        font-size: 16px;
+        font-size: 17px;
 
-        line-height: 1.65;
+        line-height: 1.7;
       }
 
       .manifesto-heading {
         font-size: 13px;
-        margin: 30px 0 10px 0;
+        margin: 40px 0 15px 0;
       }
 
       .manifesto-list {
-        font-size: 16px;
-        line-height: 1.65;
+        font-size: 17px;
+        line-height: 1.7;
       }
 
       .track-sequence-box {
         font-size: 13px;
-        padding: 14px;
+        padding: 15px;
       }
 
       .track-heading {
-        font-size: 13px;
-      }
-
-      .ghost-comment {
-        max-width: 220px;
-        margin: 25px 0;
+        font-size: 14px;
+        margin: 30px 0 10px 0;
       }
 
       .ep-cover {
 
-        width: 80px;
+        width: 86px;
 
-        height: 80px;
+        height: 86px;
       }
 
       .ep-title {
@@ -757,7 +747,7 @@
 
         flex-direction: column;
 
-        gap: 6px;
+        gap: 7px;
       }
 
     }
@@ -798,6 +788,12 @@
 
 
         <div class="hero-image">
+
+          <!--
+            Exact current filename.
+            ?v=3 forces the browser to load
+            the newest version of the image.
+          -->
 
           <img
             src="nptnnfrs-main.jpg?v=3"
@@ -912,7 +908,7 @@
           <li><strong>Minimalism as a Multi-Genre Matrix:</strong> The multiplicity of labels does not respond to an aesthetic dispersion, but to a strategy of <i>transversal textures</i>. By stripping each genre of its classic structural ornaments, NPTNNFRS extracts only its molecular essence: the spatial weight of industrial, the physical friction of techno, and the spectral melancholy of dream pop.</li>
           <li><strong>Nomenclature and Neologisms (Nightmare Pop / Witch Techno):</strong> These categories emerge as nomenclatures coined and conceptualized from NPTNNFRS's own practice. Faced with the lack of traditional electronic music pigeonholes to define this identity, these labels operate as a manifesto.</li>
           <li><strong>Lyrical Pareidolia and the Semantic Mirror:</strong> By phonetically reversing vocalizations or manipulating absolute phrases (like the word <i>"no hay"</i> in reverse), the human ear perceives illusory messages out of pure automatic recognition. A phrase that originally contained no verbal meaning is reinterpreted by the listener's psyche, becoming a constitutive part of the lyric.</li>
-          <li><strong>Space-Time Sculpture:</strong> Production is approached from an analytical view of sound. Shaped by three academic years at the Universidad Nacional de Artes (UNA) in Buenos Aires with a focus on sound engineering, the architecture of the songs is designed through the physics of space, acoustic perception, and microscopic precision of time.</li>
+          <li><strong>Space-Time Sculpture:</strong> Production is approached from an analytical view of sound. The architecture of the songs is designed through the physics of space, acoustic perception, and microscopic precision of time.</li>
         </ul>
 
         <div class="manifesto-heading">2. Transmedia Architecture and Vector Code</div>
@@ -966,15 +962,6 @@
         <p class="manifesto-text">
           <i>Coda / Deconstructed Sound Design.</i> The point of collapse and return to zero. The rhythmic patterns progressively disappear. Only the residue of the signal remains—the reverb tails of the voice and synthetic air—closing the Micro EP with a gesture of conceptual farewell that dissolves into silence.
         </p>
-        
-        <!-- =========================
-              GHOST COMMENT (FADING INLINE)
-              ========================= -->
-        <img 
-          class="ghost-comment" 
-          src="Captura de pantalla 2026-09-11 231616.png" 
-          alt="Slightly creepy comment"
-        >
 
       </section>
 
@@ -1073,4 +1060,4 @@
   </div>
 
 </body>
-</html
+</html>
