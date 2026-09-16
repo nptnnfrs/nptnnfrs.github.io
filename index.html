@@ -332,12 +332,6 @@
 
       max-width: 620px;
 
-      /*
-        The image keeps its original proportions.
-        It is allowed to extend vertically so the
-        upper part of the photograph remains visible.
-      */
-
       max-height: 78vh;
 
       height: auto;
@@ -484,10 +478,6 @@
 
       margin: 0;
 
-      /*
-        Rosa hueso suave en lugar de blanco.
-      */
-
       color: #e7d9da;
     }
     
@@ -540,6 +530,31 @@
       margin: 35px 0 10px 0;
       letter-spacing: 0.08em;
       text-transform: uppercase;
+    }
+
+    /* =========================
+       GHOST COMMENT (APPARITION)
+       ========================= */
+    .ghost-comment {
+      display: block;
+      max-width: 320px;
+      margin: 80px 0 0 0;
+      
+      /* Invert colors for dark mode & add transparency */
+      filter: invert(1) opacity(0.6); 
+      
+      /* 12-second fade loop */
+      animation: phantomFade 12s infinite;
+      
+      pointer-events: none;
+    }
+
+    @keyframes phantomFade {
+      0%   { opacity: 0; }
+      30%  { opacity: 0; }
+      50%  { opacity: 0.7; }
+      70%  { opacity: 0; }
+      100% { opacity: 0; }
     }
 
 
@@ -726,6 +741,11 @@
         margin: 30px 0 10px 0;
       }
 
+      .ghost-comment {
+        max-width: 260px;
+        margin: 60px 0 0 0;
+      }
+
       .ep-cover {
 
         width: 86px;
@@ -788,12 +808,6 @@
 
 
         <div class="hero-image">
-
-          <!--
-            Exact current filename.
-            ?v=3 forces the browser to load
-            the newest version of the image.
-          -->
 
           <img
             src="nptnnfrs-main.jpg?v=3"
@@ -962,6 +976,15 @@
         <p class="manifesto-text">
           <i>Coda / Deconstructed Sound Design.</i> The point of collapse and return to zero. The rhythmic patterns progressively disappear. Only the residue of the signal remains—the reverb tails of the voice and synthetic air—closing the Micro EP with a gesture of conceptual farewell that dissolves into silence.
         </p>
+        
+        <!-- =========================
+              GHOST COMMENT (IMAGE)
+              ========================= -->
+        <img 
+          class="ghost-comment" 
+          src="Captura de pantalla 2026-09-11 231616.png" 
+          alt="Slightly creepy comment"
+        >
 
       </section>
 
