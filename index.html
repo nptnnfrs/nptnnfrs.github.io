@@ -238,7 +238,6 @@
       font-family: "Roboto", Helvetica, Arial, sans-serif;
       font-weight: 300;
       letter-spacing: 0.01em;
-      position: relative;
     }
 
     a {
@@ -534,31 +533,28 @@
     }
 
     /* =========================
-       GHOST COMMENT (FLOATING APPARITION)
+       GHOST COMMENT (INLINE FADE OVER TEXT)
        ========================= */
     .ghost-comment {
-      position: fixed; /* Se mantiene flotando en la pantalla sin importar el scroll */
-      bottom: 8vh;     /* Aparece en la parte baja / media */
-      right: 5vw;      /* Flota hacia el margen derecho */
-      max-width: 280px;
-      z-index: 9999;
+      display: block;
+      max-width: 300px;
+      margin: 40px 0;
       
       /* Inversión de colores para modo oscuro y transparencia fantasma */
       filter: invert(1) opacity(0.65); 
       
-      /* Animación continua de aparición y desaparición */
-      animation: phantomFloat 14s infinite ease-in-out;
+      /* Animación continua de aparición y desaparición sobre la info */
+      animation: phantomFade 12s infinite ease-in-out;
       
-      pointer-events: none; /* No interrumpe los clicks de la web */
+      pointer-events: none;
     }
 
-    @keyframes phantomFloat {
-      0%   { opacity: 0; transform: translateY(15px); }
-      20%  { opacity: 0; }
-      40%  { opacity: 0.75; transform: translateY(0px); }
-      60%  { opacity: 0.75; transform: translateY(-5px); }
-      80%  { opacity: 0; transform: translateY(-15px); }
-      100% { opacity: 0; transform: translateY(15px); }
+    @keyframes phantomFade {
+      0%   { opacity: 0; }
+      30%  { opacity: 0; }
+      50%  { opacity: 0.7; }
+      70%  { opacity: 0; }
+      100% { opacity: 0; }
     }
 
 
@@ -746,9 +742,7 @@
       }
 
       .ghost-comment {
-        max-width: 200px; /* Más chica en celu para que no tape el texto */
-        right: 3vw;
-        bottom: 5vh;
+        max-width: 240px;
       }
 
       .ep-cover {
@@ -782,15 +776,6 @@
 
 
 <body>
-
-  <!-- =========================
-        GHOST COMMENT (FLOATING APPARITION)
-        ========================= -->
-  <img 
-    class="ghost-comment" 
-    src="Captura de pantalla 2026-09-11 231616.png" 
-    alt="Slightly creepy comment"
-  >
 
   <div class="site">
 
@@ -990,6 +975,15 @@
         <p class="manifesto-text">
           <i>Coda / Deconstructed Sound Design.</i> The point of collapse and return to zero. The rhythmic patterns progressively disappear. Only the residue of the signal remains—the reverb tails of the voice and synthetic air—closing the Micro EP with a gesture of conceptual farewell that dissolves into silence.
         </p>
+        
+        <!-- =========================
+              GHOST COMMENT (FADING OVER TEXT)
+              ========================= -->
+        <img 
+          class="ghost-comment" 
+          src="Captura de pantalla 2026-09-11 231616.png" 
+          alt="Slightly creepy comment"
+        >
 
       </section>
 
@@ -1023,7 +1017,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            Bandcamp / SoundCloud
+            BYE / SoundCloud
           </a>
 
 
